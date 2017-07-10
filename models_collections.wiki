@@ -1,0 +1,11 @@
+* collections/adtags/instance_zones
+    * collections/adtags/zones
+        * .../adtags/user
+        * models/adtags/zone
+            * .../adtags 
+        * collections/adtags/instance_ad_types
+            * collections/adtags/ad_types
+                * .../adtypes
+                * models/adtags/ad_type
+      
+

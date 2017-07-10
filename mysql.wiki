@@ -1,0 +1,37 @@
+= Start server = 
+* mysql.server start
+
+= Move tags between users =
+-- Large user by num of zones.
+select 
+  wui.web_user_name,
+  a.email,
+  a.affiliateid,
+  case wui.web_user_type_id
+    when 1 then 'Publisher'
+    when 2 then 'Network'
+  end user_type,
+  case ae.ad_approval 
+    when 0 then 'Not Registered'
+    when 1 then 'New/Pending'
+    when 2 then 'Denied'
+    when 92 then 'Approved'
+    when 28 then 'Approved'
+    else ae.ad_approval 
+  end publisher_state,
+  count(z.zoneid) num_zones
+from ox_web_users_informers_ad_accounts wui
+join ox_affiliates a on wui.ad_account_id = a.account_id
+join ox_affiliates_extra ae on a.affiliateid = ae.affiliateid
+left join ox_zones z on z.affiliateid = a.affiliateid
+where wui.web_user_name in ('Singledadlaughing','Singledadlaughing1')
+group by wui.web_user_name, ae.ad_approval, a.email;
+                              
+-- Move zones around for Singledadlaughing1
+update ox_zones
+-- Move to
+set affiliateid = 241309
+-- Move from
+where affiliateid = 241310 and zoneid in (
+<add zone ids here>
+);

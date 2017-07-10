@@ -1,0 +1,4 @@
+= urls = 
+* authorize: https://api4q.sovrn.com/oauth/authorize
+* token: https://api4q.sovrn.com/oauth/token
+* user: https://api4q.sovrn.com/account/user

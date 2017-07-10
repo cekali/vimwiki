@@ -1,0 +1,6 @@
+= visual mode =
+    - Enter visual mode with v, exit with ESC
+    - Allows to highlight text
+
+= turn off highlighting = 
+* :nohlsearch

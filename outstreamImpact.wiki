@@ -1,0 +1,5 @@
+= will all existing counting work to write to the existing SANDY Cassandra tables =
+
+= will there be a need to update stainless cunting to write to the new tables and data sources =
+
+= Will there be a need to update the Ad Counts Service = 

@@ -1,0 +1,3 @@
+= Copy folder recursively =
+* cp -r <old> <new>/ 
+  - note the slash

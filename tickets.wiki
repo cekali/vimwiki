@@ -1,0 +1,6 @@
+= From <Name> =
+* [ ] Edit tags resets list to first page on save
+* [ ] Can we delete tags without data?
+* [ ] Pubs need a way to "delete" tags; Some way to remove them from their view
+* [ ] Pubs would like to edit size and type
+* [ ] Why can't we edit those fields?

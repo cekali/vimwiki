@@ -1,0 +1,36 @@
+= Ad Type =
+* Ad Tag Name
+* Ad Type
+    - Updates Ad Size
+    - indirectly "toggleVisibleOptionFields"
+* Ad Size
+    - Driven by adType
+    - Ad Size Title
+        - Either 'Ad Size' or 'Delivery Type'
+        - VideoDeliveryType, NativeDeliveryType, HighImpactDeliveryType all become 'Delivery Type'
+    - "toggleVisibleOptionFields"
+
+= Configuration =    
+* CPM Floor Price
+    - Driven by adType.uiShowCpmFloorPrice
+* Maximize Fill (ignore floor)
+    - Driven by adType.uiShowMaxFillForInternational && !zone.usingEffectiveFloor || #use-efp.is(':checked')
+* Opt-In for geo locaiton
+    - Driven by adType.uiShowOptInGeoLoc
+* Passback Tag
+    - Driven by adType.uiShowPassbackField
+* Video Ad Max. Duration
+    - Driven by adType.isVideo() && adType.isInStreamVideo() && featureToggle('MERIDIAN_VIDEO_MAX_DURATION')
+
+= In View Options (OnScroll Options) =
+* (new) Add OnScroll In-View Technology
+    - Should hide
+* (new) Viewable Engage Time
+    - Driven by Add OnScroll
+* (new) Sticky Unit
+    - Driven by Add OnSCroll
+= Admin =
+* section only visible if admin?
+* Use Effective
+* (new) Sticky Div
+

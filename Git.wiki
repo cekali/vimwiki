@@ -1,0 +1,28 @@
+== bring local in line with origin ==
+    - when local has diverged from origin and you don't want the changes anymore:
+    - git reset --hard origin/<branch>
+
+== view changes ==
+git diff <commit>^ <commit>
+
+== git log command ==
+    - git log --oneline --graph --decorate --all
+    - stackoverflow with alias for logging
+        - http://stackoverflow.com/questions/1838873/visualizing-branch-topology-in-git/34467298#34467298
+        
+== show uncommitted changes ==
+    - git diff
+    
+== staging files ==
+1. git add -i
+    - enter interactive mode
+2. select the action you want to take
+3. select the files you want to act upon
+4. quit
+
+== commit == 
+super simple
+* git commit
+
+== clone ==
+

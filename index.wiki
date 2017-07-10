@@ -1,0 +1,20 @@
+= Notes and Such =
+
+* [[todo]]
+* [[outstreamImpact]]
+* [[tagWork]]
+* [[cassandra]]
+* [[mysql]]
+* [[community]]
+
+* [[Random Notes]]  
+  
+* [[tickets]]
+  
+
+== Programs ==
+* [[Vim]]
+* [[Git]]
+* [[VimWiki]]
+* [[Terminal]]
+* [[intellij]]

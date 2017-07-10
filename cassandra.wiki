@@ -1,0 +1,8 @@
+= looking up oauth details =
+1. use alias - ssh_cas_qa to log onto box (ssh_cas_prod)
+2. run "cqlsh cass1q" to enter command line (cqlsh cass1)
+3. run "use nectar_oauth" to select keyspace
+
+= useful commands =
+* describe keyspaces;
+* describe tables; 
