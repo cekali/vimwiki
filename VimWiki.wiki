@@ -1,3 +1,6 @@
 = toggle to do list items =
 * in order to create an item, it must be a list item, then control-space will create the checkbox
 
+= indent list item =
+* >> to increase indent
+* << to decrease indent

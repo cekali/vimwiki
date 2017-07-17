@@ -26,3 +26,6 @@ super simple
 
 == clone ==
 
+== add branch ==
+git checkout -b <branch-name>
+- keeps working copy intact
