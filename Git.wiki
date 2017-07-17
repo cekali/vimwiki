@@ -29,3 +29,7 @@ super simple
 == add branch ==
 git checkout -b <branch-name>
 - keeps working copy intact
+
+== stash single file ==
+git stash push <file_path>
+
