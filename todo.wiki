@@ -1,21 +1,22 @@
-= Finished lists move to the bottom? =
+= CURRENT LISTS = 
 
-* [] follow up on 102
-* 
+== Finished lists move to the bottom? ==
 
-= bits and pieces for sso =
+== prepare for vacation ==
+* [ ] On-Call final contact needs to switch to Dirk
+* [ ] Shawn needs to run weekly stuff
+
+
+= OLD LISTS =
+
+== bits and pieces for sso ==
 * [ ] add auto_approve_scopes to production cassandra
 * [ ] run flyway against qa
 * [ ] run flyway against prod
 * [x] merge sso to develop
 * [x] merge email confirmation to develop
-* [ ] 
 
-
-
-
-
-= cleaning up commit = 
+== cleaning up commit == 
 * [X] remove items from application.properties
 * [X] delete security-contenxt
 * [X] why is NectarTokenStore all commented out?
