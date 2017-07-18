@@ -3,7 +3,7 @@
     * Add details later
 * Pathogen
     * https://github.com/tpope/vim-pathogen
-* vim solarized
+* vim solarized (I'm not sold on this at the moment)
     * https://github.com/altercation/vim-colors-solarized
     1. Clone:
         - cd ~/.vim/bundle
