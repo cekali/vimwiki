@@ -1,3 +1,18 @@
+= Setup and configuration =
+* Vimwiki 
+    * Add details later
+* Pathogen
+    * https://github.com/tpope/vim-pathogen
+* vim solarized
+    * https://github.com/altercation/vim-colors-solarized
+    1. Clone:
+        - cd ~/.vim/bundle
+        - git clone git://github.com/altercation/vim-colors-solarized.git
+    2. Modify .vimrc
+        - syntax enable
+        - set background=dark
+        - colorscheme solarized
+
 = visual mode =
     - Enter visual mode with v, exit with ESC
     - Allows to highlight text

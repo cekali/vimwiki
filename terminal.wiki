@@ -1,3 +1,6 @@
 = Copy folder recursively =
 * cp -r <old> <new>/ 
   - note the slash
+
+= Create symlink =
+* ln -s /path/to/original /path/to/symlink
