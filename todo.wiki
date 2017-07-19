@@ -2,6 +2,14 @@
 
 == Finished lists move to the bottom? ==
 
+== Running List ==
+* [ ] Follow up on Christians tickets
+    * [ ] what are they?
+* [ ] Fix Git permissions
+* [ ] Schedule Scrum
+* [ ] Git strategy
+* [ ] Sort out the on-call rotation
+
 == prepare for vacation ==
 * [ ] On-Call final contact needs to switch to Dirk
 * [ ] Shawn needs to run weekly stuff
