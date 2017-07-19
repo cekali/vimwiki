@@ -7,11 +7,11 @@
     * [ ] what are they?
 * [ ] Fix Git permissions
     * [ ] Talk to laura about my permissions
-* [ ] Schedule Scrum
 * [ ] Git strategy
 * [ ] Sort out the on-call rotation
 * [ ] Review Jeff's pull request
 * [ ] Look into https://authcore.atlassian.net/browse/MAAP-246
+* [X] Schedule Scrum
 
 == Not directly work related ==
 * [ ] Add git completion to notes

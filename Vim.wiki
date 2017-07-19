@@ -13,6 +13,10 @@
         - set background=dark
         - colorscheme solarized
 
+= move line = 
+:m .+<number> where <number> is how many lines to move up
+:m .-<number>
+
 = visual mode =
     - Enter visual mode with v, exit with ESC
     - Allows to highlight text
