@@ -7,11 +7,15 @@
     * [ ] what are they?
 * [ ] Fix Git permissions
     * [ ] Talk to laura about my permissions
+        * still not sure things are where I want them...
 * [ ] Git strategy
-* [ ] Sort out the on-call rotation
 * [ ] Review Jeff's pull request
 * [ ] Look into https://authcore.atlassian.net/browse/MAAP-246
+* [ ] Change escalation to notify back up sooner while we are training
+
+
 * [X] Schedule Scrum
+* [X] Sort out the on-call rotation
 
 == Not directly work related ==
 * [ ] Add git completion to notes
