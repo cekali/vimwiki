@@ -9,6 +9,8 @@
 * [ ] Schedule Scrum
 * [ ] Git strategy
 * [ ] Sort out the on-call rotation
+* [ ] Review Jeff's pull request
+* [ ] 
 
 == prepare for vacation ==
 * [ ] On-Call final contact needs to switch to Dirk
