@@ -9,13 +9,14 @@
     * [ ] Talk to laura about my permissions
         * still not sure things are where I want them...
 * [ ] Git strategy
-* [ ] Review Jeff's pull request
 * [ ] Look into https://authcore.atlassian.net/browse/MAAP-246
 * [ ] Change escalation to notify back up sooner while we are training
+* [ ] Approve Jeff's Nectar PR (waiting on comment from Laura)
 
 
 * [X] Schedule Scrum
 * [X] Sort out the on-call rotation
+* [X] Review Jeff's pull request
 
 == Not directly work related ==
 * [ ] Add git completion to notes
