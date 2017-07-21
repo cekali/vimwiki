@@ -12,6 +12,7 @@
 * [ ] Look into https://authcore.atlassian.net/browse/MAAP-246
 * [ ] Change escalation to notify back up sooner while we are training
 * [ ] Approve Jeff's Nectar PR (waiting on comment from Laura)
+* [ ] Look into type script
 
 
 * [X] Schedule Scrum
@@ -20,6 +21,7 @@
 
 == Not directly work related ==
 * [ ] Add git completion to notes
+* [ ] Add vim-wiki setup instructions
 
 == prepare for vacation ==
 * [ ] On-Call final contact needs to switch to Dirk
