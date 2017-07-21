@@ -3,6 +3,8 @@
 == Finished lists move to the bottom? ==
 
 == Running List ==
+* [ ] What should we change during demo
+* [ ] DB startup script
 * [ ] Follow up on Christians tickets
     * [ ] what are they?
 * [ ] Fix Git permissions
@@ -13,6 +15,7 @@
 * [ ] Change escalation to notify back up sooner while we are training
 * [ ] Approve Jeff's Nectar PR (waiting on comment from Laura)
 * [ ] Look into type script
+* [ ] Confirm everyone has icinga access
 
 
 * [X] Schedule Scrum
