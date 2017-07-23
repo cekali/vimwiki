@@ -19,3 +19,4 @@
 * [[VimWiki]]
 * [[Terminal]]
 * [[intellij]]
+* [[R]]

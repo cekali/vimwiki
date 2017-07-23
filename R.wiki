@@ -1,0 +1,4 @@
+== install ==
+* install XQuartz (https://www.xquartz.org/)
+* intstall current package (3.4.1 as of 7/23/2017)
+    * https://cloud.r-project.org/
