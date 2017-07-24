@@ -2,9 +2,13 @@
 
 == Finished lists move to the bottom? ==
 
+* look into to shawns docs
+* make a plan to work with stephen
+
 == Running List ==
 * [ ] What should we change during demo
 * [ ] DB startup script
+
 * [ ] Follow up on Christians tickets
     * [ ] what are they?
 * [ ] Fix Git permissions
@@ -13,7 +17,6 @@
 * [ ] Git strategy
 * [ ] Look into https://authcore.atlassian.net/browse/MAAP-246
 * [ ] Change escalation to notify back up sooner while we are training
-* [ ] Approve Jeff's Nectar PR (waiting on comment from Laura)
 * [ ] Look into type script
 * [ ] Confirm everyone has icinga access
 
@@ -21,6 +24,7 @@
 * [X] Schedule Scrum
 * [X] Sort out the on-call rotation
 * [X] Review Jeff's pull request
+* [X] Approve Jeff's Nectar PR (waiting on comment from Laura)
 
 == Not directly work related ==
 * [ ] Add git completion to notes
