@@ -1,6 +1,9 @@
-= From <Name> =
+= From Alex Anthony =
 * [ ] Edit tags resets list to first page on save
 * [ ] Can we delete tags without data?
 * [ ] Pubs need a way to "delete" tags; Some way to remove them from their view
 * [ ] Pubs would like to edit size and type
 * [ ] Why can't we edit those fields?
+* [ ] Pubs cannot submit a site for approval without involvement of sovrn
+    * [ ] No notification goes out to anyone when they add a site in //m
+    * [ ] 

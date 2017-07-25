@@ -2,12 +2,11 @@
 
 == Finished lists move to the bottom? ==
 
-* look into to shawns docs
 * make a plan to work with stephen
+* become jira admin
 
 == Running List ==
 * [ ] What should we change during demo
-* [ ] DB startup script
 
 * [ ] Follow up on Christians tickets
     * [ ] what are they?
@@ -18,13 +17,16 @@
 * [ ] Look into https://authcore.atlassian.net/browse/MAAP-246
 * [ ] Change escalation to notify back up sooner while we are training
 * [ ] Look into type script
-* [ ] Confirm everyone has icinga access
 
 
 * [X] Schedule Scrum
+* [X] look into to shawns docs
 * [X] Sort out the on-call rotation
 * [X] Review Jeff's pull request
 * [X] Approve Jeff's Nectar PR (waiting on comment from Laura)
+* [X] how to create/start new sprint
+* [X] DB startup script
+* [X] Confirm everyone has icinga access
 
 == Not directly work related ==
 * [ ] Add git completion to notes
@@ -32,7 +34,7 @@
 
 == prepare for vacation ==
 * [ ] On-Call final contact needs to switch to Dirk
-* [ ] Shawn needs to run weekly stuff
+* [X] Shawn needs to run weekly stuff
 
 
 = OLD LISTS =
