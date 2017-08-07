@@ -1,7 +1,11 @@
 = Start server = 
 * mysql.server start
 
+= database dump =
+* You can dump database with SequelPro (Mac OSX) with File > Export (⇧⌘E) option.
+
 = Move tags between users =
+-- From Christian
 -- Large user by num of zones.
 select 
   wui.web_user_name,
