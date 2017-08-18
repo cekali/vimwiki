@@ -1,11 +1,12 @@
 = Notes and Such =
-
+this
 * [[todo]]
 * [[outstreamImpact]]
 * [[tagWork]]
 * [[cassandra]]
 * [[mysql]]
 * [[community]]
+* [[docker]]
 
 * [[Random Notes]]  
   

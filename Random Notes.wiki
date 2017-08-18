@@ -1,2 +1,4 @@
 SimpleBrokerMessageHandler.setSubscriptionRegistry
 
+socket://perfrelay.dfw2.lijit.com:8125
+

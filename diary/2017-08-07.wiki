@@ -1,1 +1,7 @@
 = what happened while I was gone=
+    * Kendra finshed 250 -> figure out what is going on with our automated testing
+    * Shawn finished and deployed 251 -> Create "hummingbird" module
+    * I'm now invited to the weekly Scrum of Scrums
+    * [ ] on-scroll submitted pull reqeust (176) -- requires follow up
+    * Header suite submitted pr-158 to nectar -> approved by shawn
+    *  

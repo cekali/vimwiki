@@ -1,0 +1,7 @@
+
+First:
+docker-compose -f .container/local-sandbox/docker-compose-full-local.yml up db-adserver db-md db-lijitreport
+- starts the db's, wait for them to come up and then:  
+Then:
+docker-compose -f .container/local-sandbox/docker-compose-full-local.yml up
+
