@@ -1,0 +1,49 @@
+TODO
+* [ ] Doc of modules 
+* [ ] Look at Nectar API Client from OnScroll
+* [X] Check-in with Jeff for next steps
+* [X] Look at Shawns Nectar code
+* [X] Resolve Viz PR
+* [X] Are we still having the statsD error?
+
+= for dirk =
+We are in the middle of a good example of the perils of feature teams ending. We wanted to update 
+one of our core dependencies. This is something that we will want to do on a recurring basis (not 
+this one specifically, but dependencies in general). We upgrade the dependency and a unit test 
+begins failing. Looking into the matter, we realize that the unit test has been throwing an error 
+but not failing. Now that the dependency is updated, the unit test fails and our build fails as a
+result. The crux of the problem is that a team that no longer exists wrote bad code, and tested it
+poorly. That code now becomes our responsibility. We are on the hook for fixing this situation
+before we can move on.
+
+* What do we do here? Give it to Viz? Give it to Hans?
+
+
+= notes =
+both api2q (develop) and api4q (feature-1) have public IPs.
+
+= Architecture Meeting =
+
+== Martha ==
+* focus will continue into q4
+* Have not planned for 2018 yet. Still more work than people.
+* Does make sense for the business to ask if we are working on the right thing on a quarterly basis.
+* No news on replacement for paul major. Walter is taking his time.
+* We are the application engineering team
+* Is the data revenue adTech? The way we currently use it, yes.
+
+
+== More smaller services ==
+* apps are grabbing random ports on machines
+* service discovery and registration
+* where are services deployed?
+* Who is leading initiative to make smaller services?
+* We still do not have a config server.
+* we expect to see some solidificaiton of where we are going related to Jesse's vision
+* How are we deciding what is getting pulled out into it's own service?
+
+== Thins coming from Jesse ==
+post mortem and five whys
+incident management (especially things with external impacts)
+root cause analysis
+

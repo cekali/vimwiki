@@ -1,0 +1,18 @@
+delte toggleButtonWrapper (now)
+get rid of the button mode property string situation (backlog)
+globalStyles: start clean (now)
+Use aphrodite expression (backlog) (soon)
+Follow through on the "statistic toggle button" (now)
+
+
+I was going to comment in the PR, but it’s so cluttered, and I want to leave space for conversation, so I’m going to post a list here. There are basically 3 categories of comments: 1. Must be changed before being merged. 2. Should be changed, if not immediately, a tech debt ticket should be created. 3. This is mostly opinion, and should be an opportunity for discussion/learning. Shortening those descriptions, we have Required, Optional, Opinion.
+
+Required:
+    Push state down into ToggleButton, probably remove Wrapper
+    GlobalStyles -> either reduce to only the set of things we want to use, or put the styles in the relevant components
+    Follow through on @nbever's last comment regarding StatisticToggleButton
+Optional: 
+    Change the mode prop in favor of multiple props
+    Change styles in ToggleButton to use aphrodite
+Opinion:
+    Everything not covered above.
