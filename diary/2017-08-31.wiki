@@ -1,0 +1,48 @@
+Dentist idea: mollner on lincoln
+
+= NPM module flow =
+
+Note that this flow assumes some of the details of your setup.
+
+1. Begin by getting to clean state
+    - Remove any existing links
+        - Either remove them using `npm unlink ...`
+        - Or navigate to your local (global) node_modules and delete them from there
+            - `/usr/local/lib/node_modules/...`
+    - From project level `rm -rf node_modules`
+    - From your packages:
+        - `npm run clean`
+        - `rm -rf node_modules`
+2. Compile, link, and go
+    - From project level
+        - `npm install`
+        - `npm install` (yes, again)
+    - From your lowest level package (i.e. charting)
+        - `npm install`
+        - `npm run compile`
+        - `npm run link`
+    - From the next highest level (i.e. dashboard)
+        - `npm install`
+        - `npm run compile`
+        - `npm run link`
+        - If you need to link any lower packages:
+            - `cd dist`
+            - `sudo npm link @.../...`
+        - Repeat for other similar situations, moving up the hierarchy
+    - From the project level:
+        - `sudo npm link @.../...` for ALL packages you had previous linked.
+        - From this point you should be able to run //m
+3. Regular workflow:
+    - Now that things are in their proper places, it should just work.
+    - When you make a change to a linked module:
+        - There may be better ways to do this, but this one I know works for now:
+        - From package level:
+            - `npm run compile`
+            - `npm run link`
+            - `sudo npm link @.../...` for any child depenedencies that need to be linked.
+        - Anything linked to that module should pick up those changes.
+        - Ive experienced the watcher does not necessarily noticing the changes, so sometimes I've had to force it.
+4. Things that cause problems:
+    1. If you have your package specified as a dependency and are using it as a link, an `npm install` may replace the link with the real depenendency. 
+
+

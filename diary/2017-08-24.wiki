@@ -1,0 +1,6 @@
+[[../TODO|TODO]]
+
+* [ ] Look into tagging in vimwiki
+
+npm list <optional package name> 
+    Shows installed versions

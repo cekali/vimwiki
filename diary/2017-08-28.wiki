@@ -1,0 +1,20 @@
+Convo with Vahid
+
+Difficulties with Redux:
+    - immutability: careful with how we are updating state, can cause side effects
+        - do not mutate state
+        - redux-immutable-state-invariant
+    - naming actions:
+    - patterns for async vs sync actions
+        - react optimistic updpates
+    - if we have alot of back and forth with server
+        - its hard to update nested objects immutably
+        - could use immutable.js
+        - could use normalizer.js to flatten the state
+        - we could also just flatten our state.
+    - separate ui state from data state.
+
+Nature based file structure - has issues, makes modularization difficult
+- look at dashboard file structure - makes sense to me. 
+  
+Gone until October.

@@ -1,0 +1,21 @@
+= OLD LISTS =
+
+== bits and pieces for sso ==
+* [ ] add auto_approve_scopes to production cassandra
+* [ ] run flyway against qa
+* [ ] run flyway against prod
+* [ ] merge sso to develop
+* [ ] merge email confirmation to develop
+
+== cleaning up commit == 
+* [X] remove items from application.properties
+* [X] delete security-contenxt
+* [X] why is NectarTokenStore all commented out?
+    - This is an old version. When it wasn't commented out the autodiscovery was mapping things
+* [X] what is up with logoutController
+
+== prepare for vacation ==
+* [X] On-Call final contact needs to switch to Dirk
+* [X] Shawn needs to run weekly stuff
+
+

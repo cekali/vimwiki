@@ -1,5 +1,5 @@
 = Notes and Such =
-this
+
 * [[todo]]
 * [[outstreamImpact]]
 * [[tagWork]]

@@ -1,3 +1,7 @@
+== push new branch == 
+git push -u origin <new_branch_name>
+
+
 == bring local in line with origin ==
     - when local has diverged from origin and you don't want the changes anymore:
     - git reset --hard origin/<branch>
