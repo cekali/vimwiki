@@ -1,0 +1,19 @@
+= scrum =
+- Kendra:
+    - firefox time outs
+    - looking through remaining tests
+- Shawn:
+    - RRT
+- Craig:
+    - Release
+    - Meetings
+
+= SOS =
+- last week:
+    - Finished a couple of modularizations
+    - Finished development work around LoDash upgrade
+    - Started incorporating a tool for managing multi-package JS projects
+- this week:
+    - Small release, mostly code for RRT
+    - Hope to promote multi-package tool to master
+    - then promote modularizations and LoDash

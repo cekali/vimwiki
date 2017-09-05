@@ -2,3 +2,6 @@
 :( no scrum today
 
 = Working on Lerna =
+
+I have a branch 'lerna' off of 'VIS-73'.
+    

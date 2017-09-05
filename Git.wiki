@@ -1,6 +1,9 @@
 == push new branch == 
 git push -u origin <new_branch_name>
 
+= goto line =
+in nomal mode:
+- Type number, then type shift-g
 
 == bring local in line with origin ==
     - when local has diverged from origin and you don't want the changes anymore:
