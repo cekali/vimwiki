@@ -1,5 +1,10 @@
 = Notes and Such =
 
+When should things be moved to store vs local to components.
+happy pack
+Read incident docs
+
+
 * [[todo]]
 * [[outstreamImpact]]
 * [[tagWork]]
@@ -21,3 +26,7 @@
 * [[Terminal]]
 * [[intellij]]
 * [[R]]
+
+
+- [ ] one
+

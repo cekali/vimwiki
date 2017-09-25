@@ -1,0 +1,8 @@
+= scrum =
+- Kendra:
+    - Test master
+- shawn:
+    - Atlas
+    - Amp tag generator
+- Craig:
+    - 

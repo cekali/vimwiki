@@ -1,0 +1,30 @@
+= Lerna cleanup items: =
+* [X] Add back remaining scripts to package.json
+* [ ] cleanup dev dependencies in meridian package
+* [ ] Bring dependencies in line between modules
+* [ ] Identify changes made to charting/dashboard
+* [X] Why is DashFrame.spec.js commented out?
+* [X] git ignore dist?
+* [X] is eslint.rc in the wrong spot?
+    - should be one in /app and /test
+* [X] babel-polyfill is commented out in meridian.js
+* [X] dashboard_graph_card.jsx (which branch did this come from)
+    - This came from vis, don't need in master
+* [X] view_dashboard_layout.js (make sure content is correct)
+* [X] revert youtube_filters_view.jsx
+* [X] make sure *.configs are in the right place
+* [X] make sure all references to ./node_modules are updpated to ../../node_modules
+    - I don't think all references need to be updated.
+    - We will have to inform users that this is something to pay attention to.
+* [X] make sure webpack configs are in the correct places
+* [X] why is clean-webpack-plugin removed from webpack.test-config.js
+    - I originally removed it because it was failing, but it seems to work fine atm.
+* [X] what is up with this file: /test/intern/support/config/dev-local.js
+
+
+Code review:
+- testing without special methods/exports
+- Currency stuff exported to module
+- Utils and formatting to module
+- Color schemes exported to module
+- 
