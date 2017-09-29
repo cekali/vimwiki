@@ -4,6 +4,9 @@
 == 2017 ==
 
 === September ===
+    * [[2017-09-28|Thursdsay]]
+    * [[2017-09-27|Wednesday]]
+    * [[2017-09-26|Tuesday]]
     * [[2017-09-25|Monday]]
     * [[2017-09-22|Friday]]
     * [[2017-09-21|Lerna cleanup items:]]

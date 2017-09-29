@@ -1,0 +1,13 @@
+= Tuesday =
+- [X] Where is feature toggle error coming from
+    - Started showing up on 9/12
+    - I don't see any references to that toggle in either //m or //n
+    - Restarting nectar seems to alleviate the problem
+- [X] Look at Viz PR
+- [ ] Get Lerna to deploy
+    1. I had removed .npmrc from that branch, so it was looking at wrong registry
+    2. sass is looking in root node_modules rather than package node_modules
+        - Not sure why the tests build correctly though?
+        - 
+- [ ] Write up pictures from yesterday
+- [ ] Figure out privleges for Jira

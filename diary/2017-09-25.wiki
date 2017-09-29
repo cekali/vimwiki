@@ -1,2 +1,7 @@
 = Monday =
 
+- [X] I pushed lerna code on friday to build on the server and the build failed
+    - Moved to Tuesday
+- [X] Work with Jeff to identify stories for Docker
+    - scheduled meeting for wednesday
+

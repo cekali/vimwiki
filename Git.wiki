@@ -11,6 +11,9 @@ in nomal mode:
 
 == view changes ==
 git diff <commit>^ <commit>
+    - Shows changes in a commit, compares ancestor (commit^) with (commit)
+git show <commit>
+    - 
 
 == git log command ==
     - git log --oneline --graph --decorate --all

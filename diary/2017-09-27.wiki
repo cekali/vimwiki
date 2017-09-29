@@ -1,0 +1,32 @@
+= Wednesday =
+
+== Holdovers ==
+- [X] Get Lerna to deploy
+    1. I had removed .npmrc from that branch, so it was looking at wrong registry
+    2. sass is looking in root node_modules rather than package node_modules
+        - Not sure why the tests build correctly though?
+    3. No template for dependency: TemplateArgumentDependency
+        - Internet suggested it is caused by having multiple webpack installations.  
+        - I removed dev dependencies from packages/meridian to resolve
+        - I bet the unit tests will fail now though...
+        - Added back the dependencies, removed wepack only
+        - Worked locally, but failed when I tried on the server.
+        - Changed setting of build step to clean resources
+    4. Currently gets a cors exception, not sure if this is my fault or not.
+        - It was not. Nectar was down. Re-deployed master to feature-1 and it works!
+- [X] Write up pictures from yesterday
+- [X] Figure out privleges for Jira
+    - I def. do not have them. Talking to diego about adding privleges
+    - Diego gave me ability to add status.
+
+== New ==
+* [X] Read Incident doc
+* [ ] Read IAB spec
+* [ ] Change default pr button to "rebase"
+* [ ] Add ability to make diary copy items to current day
+* [ ] Vimwiki has some sort of tagging support
+* [ ] re-read Incident doc
+* [ ] Review PR from Song.
+* [ ] Create Pointing/Planning meeting
+* [ ] Add "Problem" and "Spike" to Jira.
+
