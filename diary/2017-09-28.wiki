@@ -1,0 +1,58 @@
+= Thursday =
+
+== Smart Cities ==
+- the talk is packed, I didn't expect that.
+- "If you can hear me clap once..."
+
+- VP innovation denver south economic partnership
+
+- Recap
+    - half of pop in urban areas
+    - 2/3's by 2050 (additonal 2.5 billian)
+    - City
+        - resources
+        - people
+        - government
+        - qol
+        - economy
+    - "Smart cities could be asset durimng natural disasters" article from R&D magazine
+    - Need to one of four things
+        - add value
+        - ability to differentiate from other cities
+        - Stickiness
+        - solve problems
+    - 
+- Since last year
+    - Discussion about what has been built in denver south
+        - redevelopment of Meridian Business Park
+        - Lone Tree City Center
+        - City of Centennial - Municipal Fiber ( I want fiber )
+            - Scott Blumenreich (Chief Innovation & Technology Officer; CITO)
+                - connectivity is critical
+                - Funding for inelligent traffic system
+                - Preparting for automated vehicles
+    - Various last mile solutions, partnerships with Uber and Lyft
+    - Bloomberg grant to create innovation team
+        - "Failure is learning"
+    - Smart Irrigation: Chose skydrop
+        - wifi backhaul
+        - predictive analytics
+        - profile based
+    - Smart 25 initiative
+        - Realtime management of on ramps
+        - Samsung RoadX partnership
+        - Sensors communication with vehicles
+    - OpenFog
+        - Consortium
+        - Fog computing
+            - Cloud can't handle number of connected devices
+            - Fog provides layer in between
+        - City needs to be resilient, Fog operates at edge, if we loose connectivity to external resources, fog allows communication
+        - Powerful computing right at the edge and fast
+        - Security
+        - ICT infrastructure
+        - 
+- CO smart cities alliance (launched earlier this week?)
+    - Formative
+- who else is doing interesting work
+- how to get involved
