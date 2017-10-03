@@ -1,0 +1,17 @@
+= Friday =
+
+== Holdovers ==
+* [ ] Move Lerna forward...
+    - I don't know what is next...
+    - [ ] Remove viz items from master
+        - Moved files to ~/temp
+* [ ] Read IAB spec
+* [ ] Change default pr button to "rebase"
+* [ ] re-read Incident doc
+* [ ] Review PR from Song.
+
+
+
+= Not Urgent =
+* [ ] Add ability to make diary copy items to current day
+* [ ] Vimwiki has some sort of tagging support

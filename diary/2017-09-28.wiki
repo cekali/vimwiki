@@ -1,4 +1,20 @@
 = Thursday =
+== Holdovers ==
+* [X] Finish setting up board
+* [ ] Move Lerna forward...
+    - I don't know what is next...
+* [ ] Read IAB spec
+* [ ] Change default pr button to "rebase"
+* [ ] Add ability to make diary copy items to current day
+* [ ] Vimwiki has some sort of tagging support
+* [ ] re-read Incident doc
+* [ ] Review PR from Song.
+* [X] Review PRs from Vis
+* [X] Create Pointing/Planning meeting
+* [X] Add "Problem" and "Spike" to Jira.
+
+== New ==
+
 
 == Smart Cities ==
 - the talk is packed, I didn't expect that.
@@ -56,23 +72,3 @@
     - Formative
 - who else is doing interesting work
 - how to get involved
-
-= Thursdsay =
-
-== Holdovers ==
-* [X] Finish setting up board
-* [ ] 
-* [ ] Move Lerna forward...
-    - I don't know what is next...
-    - 
-* [ ] Read IAB spec
-* [ ] Change default pr button to "rebase"
-* [ ] Add ability to make diary copy items to current day
-* [ ] Vimwiki has some sort of tagging support
-* [ ] re-read Incident doc
-* [ ] Review PR from Song.
-* [ ] Review PRs from Vis
-* [X] Create Pointing/Planning meeting
-* [X] Add "Problem" and "Spike" to Jira.
-
-== New ==
