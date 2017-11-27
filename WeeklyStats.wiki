@@ -1,0 +1,15 @@
+1. Process is kicked off by an azkaban job.
+    - Code is located: https://github.com/sovrn/scheduled-workflows/tree/master/legacy/warehouse/wse_batch_send
+    - Azkaban job is located: https://mwork2.dfw3.lijit.com:8443/manager?project=wse_batch_send
+2. Azkaban job calls nectar endpoint: .../internal/batch/email/wse/date/...
+    - Code is contained in: JobLauncherController in Nectar
+3. JobLauncherController executes a stored procedure in MDDB to populate "weekly_email_queue"
+    - this stored procedure checks the preference value for opt in.
+4. Nectar than executes a spring-batch job
+    - Job is defined in: batch-wse-job.xml
+5. WSEUserEmailProcessor.process(...) in Nectar is called for each user with an entry in weekly_email_queue
+6. ^ calls WeeklyStatsEmailService.processAndSend(...) 
+7. ^ calls WeeklyStatsEmailService.createGraph(...)
+8. ^ sends post to Graphalizer and returns url of stored image
+9. url is included in data array
+10. Data array is sent to Sendgrid.

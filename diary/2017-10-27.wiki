@@ -1,0 +1,8 @@
+= What did we do in Q3? =
+* Begin Modularization of Meridian
+* Upgrade to latest versions of some core libraries
+* Updated all code to conform with our Style guide
+* Begin evaluation and updating of automation tests
+* Evaluate tooling for mono-repo
+* Begin integration of Lerna
+

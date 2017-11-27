@@ -1,0 +1,8 @@
+Status:
+- I think there are definitely some settings that need to be tweaked with regards to our spark 
+  performance.
+- I'm no longer convinced that resource constraints are the source of the problem. The lowest level 
+  logs (that I can find) all point to buffer overflows from inside xgboost. I am not sure how to 
+  continue debugging this.
+  - possible incompatibility between compilers used?
+  - 

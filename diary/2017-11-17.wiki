@@ -1,0 +1,263 @@
+[[summary]]
+
+= Failures from previous run =
+16-11-2017 17:30:11 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap1iad1
+16-11-2017 17:30:11 MST push_models_to_pods INFO - model_1510877714475: No such file or directory
+16-11-2017 17:30:11 MST push_models_to_pods INFO - ls: cannot access /usr/share/lijit-blackbird/lib/model_1510877714475: No such file or directory
+16-11-2017 17:30:12 MST push_models_to_pods INFO - Load Model Endpoint failed for ad10.ap1iad1
+
+16-11-2017 17:30:01 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap1iad1
+16-11-2017 17:30:06 MST push_models_to_pods INFO - Received disconnect from 10.183.23.196: 2: Too many authentication failures for app
+16-11-2017 17:30:06 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:30:11 MST push_models_to_pods INFO - Received disconnect from 10.183.23.196: 2: Too many authentication failures for app
+16-11-2017 17:30:11 MST push_models_to_pods INFO - Load Model Endpoint failed for ad9.ap1iad1
+
+16-11-2017 17:29:08 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap4sfo1
+16-11-2017 17:29:09 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:29:09 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:29:09 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:29:09 MST push_models_to_pods INFO - Load Model Endpoint failed for ad9.ap4sfo1
+
+16-11-2017 17:29:06 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap3sfo1
+16-11-2017 17:29:06 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:29:06 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:29:06 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:29:06 MST push_models_to_pods INFO - Load Model Endpoint failed for ad9.ap3sfo1
+
+16-11-2017 17:29:03 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap2sfo1
+16-11-2017 17:29:03 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:29:03 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:29:03 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:29:03 MST push_models_to_pods INFO - Load Model Endpoint failed for ad9.ap2sfo1
+
+16-11-2017 17:28:48 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap4sfo1
+16-11-2017 17:28:49 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:28:49 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:28:49 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:28:49 MST push_models_to_pods INFO - Load Model Endpoint failed for ad8.ap4sfo1
+
+16-11-2017 17:28:44 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap3sfo1
+16-11-2017 17:28:45 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:28:45 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:28:45 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:28:45 MST push_models_to_pods INFO - Load Model Endpoint failed for ad8.ap3sfo1
+
+16-11-2017 17:28:39 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap2sfo1
+16-11-2017 17:28:39 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:28:39 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:28:39 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:28:39 MST push_models_to_pods INFO - Load Model Endpoint failed for ad8.ap2sfo1
+
+16-11-2017 17:28:23 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap1iad1
+16-11-2017 17:28:28 MST push_models_to_pods INFO - Received disconnect from 10.148.204.144: 2: Too many authentication failures for app
+16-11-2017 17:28:28 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:28:32 MST push_models_to_pods INFO - Received disconnect from 10.148.204.144: 2: Too many authentication failures for app
+16-11-2017 17:28:32 MST push_models_to_pods INFO - Load Model Endpoint failed for ad8.ap1iad1
+
+16-11-2017 17:28:08 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap4sfo1
+16-11-2017 17:28:08 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:28:08 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:28:08 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:28:08 MST push_models_to_pods INFO - Load Model Endpoint failed for ad7.ap4sfo1
+
+16-11-2017 17:28:04 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap3sfo1
+16-11-2017 17:28:04 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:28:04 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:28:04 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:28:05 MST push_models_to_pods INFO - Load Model Endpoint failed for ad7.ap3sfo1
+
+16-11-2017 17:27:59 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap2sfo1
+16-11-2017 17:27:59 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:27:59 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:27:59 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:27:59 MST push_models_to_pods INFO - Load Model Endpoint failed for ad7.ap2sfo1
+
+16-11-2017 17:27:42 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap1iad1
+16-11-2017 17:27:47 MST push_models_to_pods INFO - Received disconnect from 10.148.204.145: 2: Too many authentication failures for app
+16-11-2017 17:27:47 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:27:52 MST push_models_to_pods INFO - Received disconnect from 10.148.204.145: 2: Too many authentication failures for app
+16-11-2017 17:27:52 MST push_models_to_pods INFO - Load Model Endpoint failed for ad7.ap1iad1
+
+16-11-2017 17:27:26 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap4sfo1
+16-11-2017 17:27:26 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:27:26 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:27:27 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:27:27 MST push_models_to_pods INFO - Load Model Endpoint failed for ad6.ap4sfo1
+
+16-11-2017 17:27:22 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap3sfo1
+16-11-2017 17:27:22 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:27:22 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:27:23 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:27:23 MST push_models_to_pods INFO - Load Model Endpoint failed for ad6.ap3sfo1
+
+16-11-2017 17:27:17 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap2sfo1
+16-11-2017 17:27:17 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:27:17 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:27:17 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:27:17 MST push_models_to_pods INFO - Load Model Endpoint failed for ad6.ap2sfo1
+
+16-11-2017 17:27:01 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap1iad1
+16-11-2017 17:27:05 MST push_models_to_pods INFO - Received disconnect from 10.148.204.147: 2: Too many authentication failures for app
+16-11-2017 17:27:05 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:27:10 MST push_models_to_pods INFO - Received disconnect from 10.148.204.147: 2: Too many authentication failures for app
+16-11-2017 17:27:10 MST push_models_to_pods INFO - Load Model Endpoint failed for ad6.ap1iad1
+
+16-11-2017 17:26:47 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap4sfo1
+16-11-2017 17:26:47 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:26:47 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:26:47 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:26:47 MST push_models_to_pods INFO - Load Model Endpoint failed for ad5.ap4sfo1
+
+16-11-2017 17:26:42 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap3sfo1
+16-11-2017 17:26:43 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:26:43 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:26:43 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:26:43 MST push_models_to_pods INFO - Load Model Endpoint failed for ad5.ap3sfo1
+
+16-11-2017 17:26:37 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap2sfo1
+16-11-2017 17:26:37 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:26:37 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:26:37 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:26:37 MST push_models_to_pods INFO - Load Model Endpoint failed for ad5.ap2sfo1
+
+16-11-2017 17:26:22 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap1iad1
+16-11-2017 17:26:26 MST push_models_to_pods INFO - Received disconnect from 10.148.204.148: 2: Too many authentication failures for app
+16-11-2017 17:26:26 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:26:30 MST push_models_to_pods INFO - Received disconnect from 10.148.204.148: 2: Too many authentication failures for app
+16-11-2017 17:26:30 MST push_models_to_pods INFO - Load Model Endpoint failed for ad5.ap1iad1
+
+16-11-2017 17:26:08 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap4sfo1
+16-11-2017 17:26:08 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:26:08 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:26:08 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:26:09 MST push_models_to_pods INFO - Load Model Endpoint failed for ad4.ap4sfo1
+
+16-11-2017 17:26:04 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap3sfo1
+16-11-2017 17:26:04 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:26:04 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:26:04 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:26:04 MST push_models_to_pods INFO - Load Model Endpoint failed for ad4.ap3sfo1
+
+16-11-2017 17:25:59 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap2sfo1
+16-11-2017 17:25:59 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:25:59 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:25:59 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:25:59 MST push_models_to_pods INFO - Load Model Endpoint failed for ad4.ap2sfo1
+
+16-11-2017 17:25:43 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap1iad1
+16-11-2017 17:25:47 MST push_models_to_pods INFO - Received disconnect from 10.148.204.149: 2: Too many authentication failures for app
+16-11-2017 17:25:47 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:25:52 MST push_models_to_pods INFO - Received disconnect from 10.148.204.149: 2: Too many authentication failures for app
+16-11-2017 17:25:52 MST push_models_to_pods INFO - Load Model Endpoint failed for ad4.ap1iad1
+
+16-11-2017 17:25:29 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap4sfo1
+16-11-2017 17:25:30 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:25:30 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:25:30 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:25:30 MST push_models_to_pods INFO - Load Model Endpoint failed for ad3.ap4sfo1
+
+16-11-2017 17:25:25 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap3sfo1
+16-11-2017 17:25:26 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:25:26 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:25:26 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:25:26 MST push_models_to_pods INFO - Load Model Endpoint failed for ad3.ap3sfo1
+
+16-11-2017 17:25:20 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap2sfo1
+16-11-2017 17:25:20 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:25:20 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:25:20 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:25:21 MST push_models_to_pods INFO - Load Model Endpoint failed for ad3.ap2sfo1
+
+16-11-2017 17:24:58 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap4sfo1
+16-11-2017 17:24:58 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:24:58 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:24:58 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:24:58 MST push_models_to_pods INFO - Load Model Endpoint failed for ad2.ap4sfo1
+
+16-11-2017 17:24:54 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap3sfo1
+16-11-2017 17:24:54 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:24:54 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:24:54 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:24:54 MST push_models_to_pods INFO - Load Model Endpoint failed for ad2.ap3sfo1
+
+16-11-2017 17:24:47 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap2sfo1
+16-11-2017 17:24:47 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:24:47 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:24:48 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:24:48 MST push_models_to_pods INFO - Load Model Endpoint failed for ad2.ap2sfo1
+
+16-11-2017 17:24:28 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap4sfo1
+16-11-2017 17:24:28 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:24:28 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:24:28 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:24:28 MST push_models_to_pods INFO - Load Model Endpoint failed for ad10.ap4sfo1
+
+16-11-2017 17:24:24 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap3sfo1
+16-11-2017 17:24:24 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:24:24 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:24:25 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:24:25 MST push_models_to_pods INFO - Load Model Endpoint failed for ad10.ap3sfo1
+
+16-11-2017 17:24:21 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap2sfo1
+16-11-2017 17:24:22 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:24:22 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:24:22 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:24:22 MST push_models_to_pods INFO - Load Model Endpoint failed for ad10.ap2sfo1
+
+16-11-2017 17:24:06 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap4sfo1
+16-11-2017 17:24:06 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:24:06 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:24:06 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:24:06 MST push_models_to_pods INFO - Load Model Endpoint failed for ad1.ap4sfo1
+
+16-11-2017 17:24:01 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap3sfo1
+16-11-2017 17:24:01 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:24:01 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:24:01 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:24:02 MST push_models_to_pods INFO - Load Model Endpoint failed for ad1.ap3sfo1
+
+16-11-2017 17:23:55 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap2sfo1
+16-11-2017 17:23:55 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:23:55 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:23:56 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:23:56 MST push_models_to_pods INFO - Load Model Endpoint failed for ad1.ap2sfo1
+
+16-11-2017 17:23:43 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap1sfo1
+16-11-2017 17:23:44 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:23:44 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:23:44 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:23:44 MST push_models_to_pods INFO - Load Model Endpoint failed for ad6.ap1sfo1
+
+16-11-2017 17:23:43 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap1sfo1
+16-11-2017 17:23:43 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:23:43 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:23:43 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:23:43 MST push_models_to_pods INFO - Load Model Endpoint failed for ad5.ap1sfo1
+
+16-11-2017 17:23:40 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap1sfo1
+16-11-2017 17:23:40 MST push_models_to_pods INFO - Permission denied, please try again.
+16-11-2017 17:23:40 MST push_models_to_pods INFO - Received disconnect from 172.30.46.43: 2: Too many authentication failures for app
+16-11-2017 17:23:40 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:23:41 MST push_models_to_pods INFO - Permission denied, please try again.
+16-11-2017 17:23:41 MST push_models_to_pods INFO - Received disconnect from 172.30.46.43: 2: Too many authentication failures for app
+16-11-2017 17:23:41 MST push_models_to_pods INFO - Load Model Endpoint failed for ad1.ap1sfo1
+
+16-11-2017 17:23:41 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap1sfo1
+16-11-2017 17:23:41 MST push_models_to_pods INFO - Permission denied, please try again.
+16-11-2017 17:23:41 MST push_models_to_pods INFO - Received disconnect from 172.30.46.46: 2: Too many authentication failures for app
+16-11-2017 17:23:41 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:23:42 MST push_models_to_pods INFO - Permission denied, please try again.
+16-11-2017 17:23:42 MST push_models_to_pods INFO - Received disconnect from 172.30.46.46: 2: Too many authentication failures for app
+16-11-2017 17:23:42 MST push_models_to_pods INFO - Load Model Endpoint failed for ad2.ap1sfo1
+
+16-11-2017 17:23:42 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap1sfo1
+16-11-2017 17:23:42 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:23:42 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:23:42 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:23:42 MST push_models_to_pods INFO - Load Model Endpoint failed for ad3.ap1sfo1
+
+16-11-2017 17:23:42 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap1sfo1
+16-11-2017 17:23:43 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:23:43 MST push_models_to_pods INFO - lost connection
+16-11-2017 17:23:43 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 17:23:43 MST push_models_to_pods INFO - Load Model Endpoint failed for ad4.ap1sfo1

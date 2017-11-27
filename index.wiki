@@ -1,9 +1,13 @@
 = Notes and Such =
 
+* [[WeeklyStats]]
+
 When should things be moved to store vs local to components.
 happy pack
-Read incident docs
 
+/usr/share/lijit-nectar/logs
+
+vi /usr/local/etc/nginx/nginx.conf
 
 * [[todo]]
 * [[outstreamImpact]]

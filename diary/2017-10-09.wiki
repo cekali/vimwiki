@@ -1,0 +1,17 @@
+
+how many users have active traffic and do not have the latest T&C
+
+publishers who are taking traffic who are not going into //m
+
+Those who don't log into //m, how do we get them to accept tc's 
+
+how many redlines?
+
+make sure to check
+- show only if they haven't accepted
+- make sure admin can't override
+
+
+Other things: 
+- We need to fix things that are referencing old tables?
+- d

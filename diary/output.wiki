@@ -1,0 +1,728 @@
+16-11-2017 10:34:12 MST push_models_to_pods INFO - Starting job push_models_to_pods at 1510853652651
+16-11-2017 10:34:12 MST push_models_to_pods INFO - job JVM args: -Dazkaban.flowid=push_models_to_pods -Dazkaban.execid=300968 -Dazkaban.jobid=push_models_to_pods
+16-11-2017 10:34:12 MST push_models_to_pods INFO - Building command job executor. 
+16-11-2017 10:34:12 MST push_models_to_pods INFO - 2 commands to execute.
+16-11-2017 10:34:12 MST push_models_to_pods INFO - effective user is: datamgmt
+16-11-2017 10:34:12 MST push_models_to_pods INFO - Command: echo "Push Yield Opt Models to Pods"
+16-11-2017 10:34:12 MST push_models_to_pods INFO - Environment variables: {JOB_OUTPUT_PROP_FILE=/opt/azkaban/executer/executions/300968/usr/share/sovrn-yomta/azkaban/continuous-model-training/push_models_to_pods_output_621978428879632048_tmp, JOB_PROP_FILE=/opt/azkaban/executer/executions/300968/usr/share/sovrn-yomta/azkaban/continuous-model-training/push_models_to_pods_props_4229555868640724154_tmp, KRB5CCNAME=/tmp/krb5cc__continuous-model-training__push_models_to_pods__push_models_to_pods__300968__datamgmt, JOB_NAME=push_models_to_pods}
+16-11-2017 10:34:12 MST push_models_to_pods INFO - Working directory: /opt/azkaban/executer/executions/300968/usr/share/sovrn-yomta/azkaban/continuous-model-training
+16-11-2017 10:34:12 MST push_models_to_pods INFO - Push Yield Opt Models to Pods
+16-11-2017 10:34:12 MST push_models_to_pods INFO - Process completed successfully in 0 seconds.
+16-11-2017 10:34:12 MST push_models_to_pods INFO - Command: /usr/share/sovrn-workflow-runner/workflow_runner.py -c /usr/share/sovrn-yomta/azkaban/continuous-model-training/push_models_to_pods.ini
+16-11-2017 10:34:12 MST push_models_to_pods INFO - Environment variables: {JOB_OUTPUT_PROP_FILE=/opt/azkaban/executer/executions/300968/usr/share/sovrn-yomta/azkaban/continuous-model-training/push_models_to_pods_output_621978428879632048_tmp, JOB_PROP_FILE=/opt/azkaban/executer/executions/300968/usr/share/sovrn-yomta/azkaban/continuous-model-training/push_models_to_pods_props_4229555868640724154_tmp, KRB5CCNAME=/tmp/krb5cc__continuous-model-training__push_models_to_pods__push_models_to_pods__300968__datamgmt, JOB_NAME=push_models_to_pods}
+16-11-2017 10:34:12 MST push_models_to_pods INFO - Working directory: /opt/azkaban/executer/executions/300968/usr/share/sovrn-yomta/azkaban/continuous-model-training
+16-11-2017 10:34:12 MST push_models_to_pods INFO - [2017-11-16 10:34:12,749][INFO] Establishing connection to ('mwork3.dfw3', 11321)
+16-11-2017 10:34:12 MST push_models_to_pods INFO - Remote execution: datasrv@mwork3.dfw3
+16-11-2017 10:34:12 MST push_models_to_pods INFO - Initiating "/usr/share/sovrn-yomta/azkaban/continuous-model-training/push_models_to_pods.ini" workflow, stand by
+16-11-2017 10:34:12 MST push_models_to_pods INFO - #1 >> hadoop fs -ls  /user/yieldopt/models | awk -F" " '{print $6" "$7" "$8}' | sort -nr | head -1 | cut -d" " -f3|cut -d'/' -f 5 ...
+16-11-2017 10:34:14 MST push_models_to_pods INFO - model_1510853038937
+16-11-2017 10:34:14 MST push_models_to_pods INFO - #1 >> runtime: 0:00:02.004460
+16-11-2017 10:34:14 MST push_models_to_pods INFO - #2 >> /usr/local/bin/model_scp_to_all_pods "model_1510853038937" ...
+16-11-2017 10:34:21 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap1sfo1
+16-11-2017 10:34:21 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:34:21 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:34:21 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:34:21 MST push_models_to_pods INFO - Load Model Endpoint failed for ad1.ap1sfo1
+16-11-2017 10:34:21 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap1sfo1
+16-11-2017 10:34:22 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:34:22 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:34:22 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:34:22 MST push_models_to_pods INFO - Load Model Endpoint failed for ad2.ap1sfo1
+16-11-2017 10:34:22 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap1sfo1
+16-11-2017 10:34:23 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:34:23 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:34:23 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:34:23 MST push_models_to_pods INFO - Load Model Endpoint failed for ad3.ap1sfo1
+16-11-2017 10:34:23 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap1sfo1
+16-11-2017 10:34:23 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:34:23 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:34:23 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:34:23 MST push_models_to_pods INFO - Load Model Endpoint failed for ad4.ap1sfo1
+16-11-2017 10:34:23 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap1sfo1
+16-11-2017 10:34:24 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:34:24 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:34:24 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:34:24 MST push_models_to_pods INFO - Load Model Endpoint failed for ad5.ap1sfo1
+16-11-2017 10:34:24 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap1sfo1
+16-11-2017 10:34:24 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:34:24 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:34:24 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:34:25 MST push_models_to_pods INFO - Load Model Endpoint failed for ad6.ap1sfo1
+16-11-2017 10:34:25 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap1ams2
+16-11-2017 10:34:29 MST push_models_to_pods INFO - model_1510853038937 loaded on ad1.ap1ams2
+16-11-2017 10:34:29 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap1iad1
+16-11-2017 10:34:30 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:34:30 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:34:30 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:34:30 MST push_models_to_pods INFO - Load Model Endpoint failed for ad1.ap1iad1
+16-11-2017 10:34:30 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap1iad3
+16-11-2017 10:34:33 MST push_models_to_pods INFO - model_1510853038937 loaded on ad1.ap1iad3
+16-11-2017 10:34:33 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap1sjc1
+16-11-2017 10:34:34 MST push_models_to_pods INFO - model_1510853038937 loaded on ad1.ap1sjc1
+16-11-2017 10:34:34 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap1sna1
+16-11-2017 10:34:37 MST push_models_to_pods INFO - model_1510853038937 loaded on ad1.ap1sna1
+16-11-2017 10:34:37 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap2iad1
+16-11-2017 10:34:38 MST push_models_to_pods INFO - model_1510853038937 loaded on ad1.ap2iad1
+16-11-2017 10:34:38 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap2sfo1
+16-11-2017 10:34:38 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:34:38 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:34:39 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:34:39 MST push_models_to_pods INFO - Load Model Endpoint failed for ad1.ap2sfo1
+16-11-2017 10:34:39 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap2sjc1
+16-11-2017 10:34:40 MST push_models_to_pods INFO - model_1510853038937 loaded on ad1.ap2sjc1
+16-11-2017 10:34:40 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap2sna1
+16-11-2017 10:34:43 MST push_models_to_pods INFO - model_1510853038937 loaded on ad1.ap2sna1
+16-11-2017 10:34:43 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap3iad1
+16-11-2017 10:34:44 MST push_models_to_pods INFO - model_1510853038937 loaded on ad1.ap3iad1
+16-11-2017 10:34:44 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap3sfo1
+16-11-2017 10:34:44 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:34:44 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:34:44 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:34:44 MST push_models_to_pods INFO - Load Model Endpoint failed for ad1.ap3sfo1
+16-11-2017 10:34:44 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap3sna1
+16-11-2017 10:34:47 MST push_models_to_pods INFO - model_1510853038937 loaded on ad1.ap3sna1
+16-11-2017 10:34:47 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap4iad1
+16-11-2017 10:34:48 MST push_models_to_pods INFO - model_1510853038937 loaded on ad1.ap4iad1
+16-11-2017 10:34:48 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap4sfo1
+16-11-2017 10:34:48 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:34:48 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:34:49 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:34:49 MST push_models_to_pods INFO - Load Model Endpoint failed for ad1.ap4sfo1
+16-11-2017 10:34:49 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap4sna1
+16-11-2017 10:34:51 MST push_models_to_pods INFO - model_1510853038937 loaded on ad1.ap4sna1
+16-11-2017 10:34:51 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap5iad1
+16-11-2017 10:34:51 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:34:51 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:34:52 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:34:52 MST push_models_to_pods INFO - Load Model Endpoint failed for ad1.ap5iad1
+16-11-2017 10:34:52 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap5sna1
+16-11-2017 10:34:54 MST push_models_to_pods INFO - model_1510853038937 loaded on ad1.ap5sna1
+16-11-2017 10:34:54 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap6iad1
+16-11-2017 10:34:55 MST push_models_to_pods INFO - model_1510853038937 loaded on ad1.ap6iad1
+16-11-2017 10:34:55 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap6sna1
+16-11-2017 10:34:58 MST push_models_to_pods INFO - model_1510853038937 loaded on ad1.ap6sna1
+16-11-2017 10:34:58 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap1iad3
+16-11-2017 10:35:00 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap1iad3
+16-11-2017 10:35:00 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap1sna1
+16-11-2017 10:35:02 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap1sna1
+16-11-2017 10:35:02 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap2sfo1
+16-11-2017 10:35:03 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:35:03 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:35:03 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:35:03 MST push_models_to_pods INFO - Load Model Endpoint failed for ad10.ap2sfo1
+16-11-2017 10:35:03 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap2sna1
+16-11-2017 10:35:05 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap2sna1
+16-11-2017 10:35:05 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap3sfo1
+16-11-2017 10:35:06 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:35:06 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:35:06 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:35:06 MST push_models_to_pods INFO - Load Model Endpoint failed for ad10.ap3sfo1
+16-11-2017 10:35:06 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap3sna1
+16-11-2017 10:35:09 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap3sna1
+16-11-2017 10:35:09 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap4sfo1
+16-11-2017 10:35:09 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:35:09 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:35:09 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:35:09 MST push_models_to_pods INFO - Load Model Endpoint failed for ad10.ap4sfo1
+16-11-2017 10:35:09 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap4sna1
+16-11-2017 10:35:12 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap4sna1
+16-11-2017 10:35:12 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap5sna1
+16-11-2017 10:35:14 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap5sna1
+16-11-2017 10:35:14 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap6sna1
+16-11-2017 10:35:16 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap6sna1
+16-11-2017 10:35:16 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap1ams2
+16-11-2017 10:35:20 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap1ams2
+16-11-2017 10:35:20 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap1iad1
+16-11-2017 10:35:20 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:35:20 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:35:21 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:35:21 MST push_models_to_pods INFO - Load Model Endpoint failed for ad2.ap1iad1
+16-11-2017 10:35:21 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap1iad3
+16-11-2017 10:35:23 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap1iad3
+16-11-2017 10:35:23 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap1sjc1
+16-11-2017 10:35:25 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap1sjc1
+16-11-2017 10:35:25 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap1sna1
+16-11-2017 10:35:27 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap1sna1
+16-11-2017 10:35:27 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap2iad1
+16-11-2017 10:35:28 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap2iad1
+16-11-2017 10:35:28 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap2sfo1
+16-11-2017 10:35:29 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:35:29 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:35:29 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:35:29 MST push_models_to_pods INFO - Load Model Endpoint failed for ad2.ap2sfo1
+16-11-2017 10:35:29 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap2sjc1
+16-11-2017 10:35:30 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap2sjc1
+16-11-2017 10:35:30 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap2sna1
+16-11-2017 10:35:33 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap2sna1
+16-11-2017 10:35:33 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap3iad1
+16-11-2017 10:35:34 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap3iad1
+16-11-2017 10:35:34 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap3sfo1
+16-11-2017 10:35:34 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:35:34 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:35:35 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:35:35 MST push_models_to_pods INFO - Load Model Endpoint failed for ad2.ap3sfo1
+16-11-2017 10:35:35 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap3sna1
+16-11-2017 10:35:37 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap3sna1
+16-11-2017 10:35:37 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap4iad1
+16-11-2017 10:35:39 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap4iad1
+16-11-2017 10:35:39 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap4sfo1
+16-11-2017 10:35:39 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:35:39 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:35:39 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:35:39 MST push_models_to_pods INFO - Load Model Endpoint failed for ad2.ap4sfo1
+16-11-2017 10:35:39 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap4sna1
+16-11-2017 10:35:41 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap4sna1
+16-11-2017 10:35:41 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap5iad1
+16-11-2017 10:35:42 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap5iad1
+16-11-2017 10:35:42 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap5sna1
+16-11-2017 10:35:45 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap5sna1
+16-11-2017 10:35:45 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap6iad1
+16-11-2017 10:35:46 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap6iad1
+16-11-2017 10:35:46 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap6sna1
+16-11-2017 10:35:49 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap6sna1
+16-11-2017 10:35:49 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap1ams2
+16-11-2017 10:35:52 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap1ams2
+16-11-2017 10:35:52 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap1iad1
+16-11-2017 10:35:53 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:35:53 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:35:53 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:35:53 MST push_models_to_pods INFO - Load Model Endpoint failed for ad3.ap1iad1
+16-11-2017 10:35:53 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap1iad3
+16-11-2017 10:35:57 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap1iad3
+16-11-2017 10:35:57 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap1sjc1
+16-11-2017 10:35:58 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap1sjc1
+16-11-2017 10:35:58 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap1sna1
+16-11-2017 10:36:00 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap1sna1
+16-11-2017 10:36:00 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap2iad1
+16-11-2017 10:36:02 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap2iad1
+16-11-2017 10:36:02 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap2sfo1
+16-11-2017 10:36:02 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:36:02 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:36:02 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:36:02 MST push_models_to_pods INFO - Load Model Endpoint failed for ad3.ap2sfo1
+16-11-2017 10:36:02 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap2sjc1
+16-11-2017 10:36:03 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap2sjc1
+16-11-2017 10:36:03 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap2sna1
+16-11-2017 10:36:06 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap2sna1
+16-11-2017 10:36:06 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap3iad1
+16-11-2017 10:36:07 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap3iad1
+16-11-2017 10:36:07 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap3sfo1
+16-11-2017 10:36:07 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:36:07 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:36:08 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:36:08 MST push_models_to_pods INFO - Load Model Endpoint failed for ad3.ap3sfo1
+16-11-2017 10:36:08 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap3sna1
+16-11-2017 10:36:10 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap3sna1
+16-11-2017 10:36:10 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap4iad1
+16-11-2017 10:36:11 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap4iad1
+16-11-2017 10:36:11 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap4sfo1
+16-11-2017 10:36:12 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:36:12 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:36:12 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:36:12 MST push_models_to_pods INFO - Load Model Endpoint failed for ad3.ap4sfo1
+16-11-2017 10:36:12 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap4sna1
+16-11-2017 10:36:14 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap4sna1
+16-11-2017 10:36:14 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap5iad1
+16-11-2017 10:36:16 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap5iad1
+16-11-2017 10:36:16 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap5sna1
+16-11-2017 10:36:18 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap5sna1
+16-11-2017 10:36:18 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap6iad1
+16-11-2017 10:36:19 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap6iad1
+16-11-2017 10:36:19 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap6sna1
+16-11-2017 10:36:22 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap6sna1
+16-11-2017 10:36:22 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap1ams2
+16-11-2017 10:36:26 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap1ams2
+16-11-2017 10:36:26 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap1iad1
+16-11-2017 10:36:27 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:36:27 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:36:27 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:36:27 MST push_models_to_pods INFO - Load Model Endpoint failed for ad4.ap1iad1
+16-11-2017 10:36:27 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap1iad3
+16-11-2017 10:36:30 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap1iad3
+16-11-2017 10:36:30 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap1sjc1
+16-11-2017 10:36:31 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap1sjc1
+16-11-2017 10:36:31 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap1sna1
+16-11-2017 10:36:33 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap1sna1
+16-11-2017 10:36:33 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap2iad1
+16-11-2017 10:36:35 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap2iad1
+16-11-2017 10:36:35 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap2sfo1
+16-11-2017 10:36:35 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:36:35 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:36:35 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:36:35 MST push_models_to_pods INFO - Load Model Endpoint failed for ad4.ap2sfo1
+16-11-2017 10:36:35 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap2sjc1
+16-11-2017 10:36:36 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap2sjc1
+16-11-2017 10:36:36 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap2sna1
+16-11-2017 10:36:41 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap2sna1
+16-11-2017 10:36:41 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap3iad1
+16-11-2017 10:36:42 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap3iad1
+16-11-2017 10:36:42 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap3sfo1
+16-11-2017 10:36:42 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:36:42 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:36:43 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:36:43 MST push_models_to_pods INFO - Load Model Endpoint failed for ad4.ap3sfo1
+16-11-2017 10:36:43 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap3sna1
+16-11-2017 10:36:46 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap3sna1
+16-11-2017 10:36:46 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap4iad1
+16-11-2017 10:36:47 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap4iad1
+16-11-2017 10:36:47 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap4sfo1
+16-11-2017 10:36:47 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:36:47 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:36:47 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:36:47 MST push_models_to_pods INFO - Load Model Endpoint failed for ad4.ap4sfo1
+16-11-2017 10:36:47 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap4sna1
+16-11-2017 10:36:50 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap4sna1
+16-11-2017 10:36:50 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap5iad1
+16-11-2017 10:36:51 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap5iad1
+16-11-2017 10:36:51 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap5sna1
+16-11-2017 10:36:53 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap5sna1
+16-11-2017 10:36:53 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap6iad1
+16-11-2017 10:36:55 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap6iad1
+16-11-2017 10:36:55 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap6sna1
+16-11-2017 10:36:57 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap6sna1
+16-11-2017 10:36:57 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap1ams2
+16-11-2017 10:37:01 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap1ams2
+16-11-2017 10:37:01 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap1iad1
+16-11-2017 10:37:01 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:37:01 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:37:02 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:37:02 MST push_models_to_pods INFO - Load Model Endpoint failed for ad5.ap1iad1
+16-11-2017 10:37:02 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap1iad3
+16-11-2017 10:37:06 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap1iad3
+16-11-2017 10:37:06 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap1sjc1
+16-11-2017 10:37:07 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap1sjc1
+16-11-2017 10:37:07 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap1sna1
+16-11-2017 10:37:10 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap1sna1
+16-11-2017 10:37:10 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap2iad1
+16-11-2017 10:37:11 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap2iad1
+16-11-2017 10:37:11 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap2sfo1
+16-11-2017 10:37:11 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:37:11 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:37:11 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:37:11 MST push_models_to_pods INFO - Load Model Endpoint failed for ad5.ap2sfo1
+16-11-2017 10:37:11 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap2sjc1
+16-11-2017 10:37:13 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap2sjc1
+16-11-2017 10:37:13 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap2sna1
+16-11-2017 10:37:15 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap2sna1
+16-11-2017 10:37:15 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap3iad1
+16-11-2017 10:37:16 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap3iad1
+16-11-2017 10:37:16 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap3sfo1
+16-11-2017 10:37:17 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:37:17 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:37:17 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:37:17 MST push_models_to_pods INFO - Load Model Endpoint failed for ad5.ap3sfo1
+16-11-2017 10:37:17 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap3sna1
+16-11-2017 10:37:19 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap3sna1
+16-11-2017 10:37:19 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap4iad1
+16-11-2017 10:37:21 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap4iad1
+16-11-2017 10:37:21 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap4sfo1
+16-11-2017 10:37:21 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:37:21 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:37:21 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:37:21 MST push_models_to_pods INFO - Load Model Endpoint failed for ad5.ap4sfo1
+16-11-2017 10:37:21 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap4sna1
+16-11-2017 10:37:24 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap4sna1
+16-11-2017 10:37:24 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap5iad1
+16-11-2017 10:37:25 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap5iad1
+16-11-2017 10:37:25 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap5sna1
+16-11-2017 10:37:27 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap5sna1
+16-11-2017 10:37:27 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap6iad1
+16-11-2017 10:37:29 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap6iad1
+16-11-2017 10:37:29 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap6sna1
+16-11-2017 10:37:31 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap6sna1
+16-11-2017 10:37:31 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap1ams2
+16-11-2017 10:37:35 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap1ams2
+16-11-2017 10:37:35 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap1iad1
+16-11-2017 10:37:35 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:37:35 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:37:36 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:37:36 MST push_models_to_pods INFO - Load Model Endpoint failed for ad6.ap1iad1
+16-11-2017 10:37:36 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap1iad3
+16-11-2017 10:37:38 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap1iad3
+16-11-2017 10:37:38 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap1sjc1
+16-11-2017 10:37:40 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap1sjc1
+16-11-2017 10:37:40 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap1sna1
+16-11-2017 10:37:42 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap1sna1
+16-11-2017 10:37:42 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap2iad1
+16-11-2017 10:37:43 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap2iad1
+16-11-2017 10:37:43 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap2sfo1
+16-11-2017 10:37:44 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:37:44 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:37:44 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:37:44 MST push_models_to_pods INFO - Load Model Endpoint failed for ad6.ap2sfo1
+16-11-2017 10:37:44 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap2sjc1
+16-11-2017 10:37:45 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap2sjc1
+16-11-2017 10:37:45 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap2sna1
+16-11-2017 10:37:48 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap2sna1
+16-11-2017 10:37:48 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap3iad1
+16-11-2017 10:37:49 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap3iad1
+16-11-2017 10:37:49 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap3sfo1
+16-11-2017 10:37:49 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:37:49 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:37:49 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:37:49 MST push_models_to_pods INFO - Load Model Endpoint failed for ad6.ap3sfo1
+16-11-2017 10:37:49 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap3sna1
+16-11-2017 10:37:52 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap3sna1
+16-11-2017 10:37:52 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap4iad1
+16-11-2017 10:37:53 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap4iad1
+16-11-2017 10:37:53 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap4sfo1
+16-11-2017 10:37:53 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:37:53 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:37:53 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:37:53 MST push_models_to_pods INFO - Load Model Endpoint failed for ad6.ap4sfo1
+16-11-2017 10:37:53 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap4sna1
+16-11-2017 10:37:56 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap4sna1
+16-11-2017 10:37:56 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap5iad1
+16-11-2017 10:37:57 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap5iad1
+16-11-2017 10:37:57 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap5sna1
+16-11-2017 10:38:00 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap5sna1
+16-11-2017 10:38:00 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap6iad1
+16-11-2017 10:38:01 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap6iad1
+16-11-2017 10:38:01 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap6sna1
+16-11-2017 10:38:04 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap6sna1
+16-11-2017 10:38:04 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap1ams2
+16-11-2017 10:38:09 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap1ams2
+16-11-2017 10:38:09 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap1iad1
+16-11-2017 10:38:09 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:38:09 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:38:09 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:38:09 MST push_models_to_pods INFO - Load Model Endpoint failed for ad7.ap1iad1
+16-11-2017 10:38:09 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap1iad3
+16-11-2017 10:38:11 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap1iad3
+16-11-2017 10:38:11 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap1sjc1
+16-11-2017 10:38:13 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap1sjc1
+16-11-2017 10:38:13 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap1sna1
+16-11-2017 10:38:15 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap1sna1
+16-11-2017 10:38:15 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap2iad1
+16-11-2017 10:38:17 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap2iad1
+16-11-2017 10:38:17 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap2sfo1
+16-11-2017 10:38:17 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:38:17 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:38:17 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:38:17 MST push_models_to_pods INFO - Load Model Endpoint failed for ad7.ap2sfo1
+16-11-2017 10:38:17 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap2sjc1
+16-11-2017 10:38:18 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap2sjc1
+16-11-2017 10:38:18 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap2sna1
+16-11-2017 10:38:21 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap2sna1
+16-11-2017 10:38:21 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap3iad1
+16-11-2017 10:38:22 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap3iad1
+16-11-2017 10:38:22 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap3sfo1
+16-11-2017 10:38:22 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:38:22 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:38:22 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:38:23 MST push_models_to_pods INFO - Load Model Endpoint failed for ad7.ap3sfo1
+16-11-2017 10:38:23 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap3sna1
+16-11-2017 10:38:25 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap3sna1
+16-11-2017 10:38:25 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap4iad1
+16-11-2017 10:38:26 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap4iad1
+16-11-2017 10:38:26 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap4sfo1
+16-11-2017 10:38:26 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:38:26 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:38:27 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:38:27 MST push_models_to_pods INFO - Load Model Endpoint failed for ad7.ap4sfo1
+16-11-2017 10:38:27 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap4sna1
+16-11-2017 10:38:29 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap4sna1
+16-11-2017 10:38:29 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap5iad1
+16-11-2017 10:38:30 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap5iad1
+16-11-2017 10:38:30 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap5sna1
+16-11-2017 10:38:33 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap5sna1
+16-11-2017 10:38:33 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap6iad1
+16-11-2017 10:38:34 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap6iad1
+16-11-2017 10:38:34 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap6sna1
+16-11-2017 10:38:37 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap6sna1
+16-11-2017 10:38:37 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap1ams2
+16-11-2017 10:38:40 MST push_models_to_pods INFO - model_1510853038937 loaded on ad8.ap1ams2
+16-11-2017 10:38:40 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap1iad1
+16-11-2017 10:38:41 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:38:41 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:38:41 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:38:41 MST push_models_to_pods INFO - Load Model Endpoint failed for ad8.ap1iad1
+16-11-2017 10:38:41 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap1iad3
+16-11-2017 10:38:45 MST push_models_to_pods INFO - model_1510853038937 loaded on ad8.ap1iad3
+16-11-2017 10:38:45 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap1sjc1
+16-11-2017 10:38:46 MST push_models_to_pods INFO - model_1510853038937 loaded on ad8.ap1sjc1
+16-11-2017 10:38:46 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap1sna1
+16-11-2017 10:38:49 MST push_models_to_pods INFO - model_1510853038937 loaded on ad8.ap1sna1
+16-11-2017 10:38:49 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap2iad1
+16-11-2017 10:38:50 MST push_models_to_pods INFO - model_1510853038937 loaded on ad8.ap2iad1
+16-11-2017 10:38:50 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap2sfo1
+16-11-2017 10:38:50 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:38:50 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:38:50 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:38:51 MST push_models_to_pods INFO - Load Model Endpoint failed for ad8.ap2sfo1
+16-11-2017 10:38:51 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap2sjc1
+16-11-2017 10:38:52 MST push_models_to_pods INFO - model_1510853038937 loaded on ad8.ap2sjc1
+16-11-2017 10:38:52 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap2sna1
+16-11-2017 10:38:55 MST push_models_to_pods INFO - model_1510853038937 loaded on ad8.ap2sna1
+16-11-2017 10:38:55 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap3iad1
+16-11-2017 10:38:57 MST push_models_to_pods INFO - model_1510853038937 loaded on ad8.ap3iad1
+16-11-2017 10:38:57 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap3sfo1
+16-11-2017 10:38:57 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:38:57 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:38:57 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:38:57 MST push_models_to_pods INFO - Load Model Endpoint failed for ad8.ap3sfo1
+16-11-2017 10:38:57 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap3sna1
+16-11-2017 10:39:01 MST push_models_to_pods INFO - model_1510853038937 loaded on ad8.ap3sna1
+16-11-2017 10:39:01 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap4iad1
+16-11-2017 10:39:02 MST push_models_to_pods INFO - model_1510853038937 loaded on ad8.ap4iad1
+16-11-2017 10:39:02 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap4sfo1
+16-11-2017 10:39:02 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:39:02 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:39:02 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:39:02 MST push_models_to_pods INFO - Load Model Endpoint failed for ad8.ap4sfo1
+16-11-2017 10:39:02 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap4sna1
+16-11-2017 10:39:05 MST push_models_to_pods INFO - model_1510853038937 loaded on ad8.ap4sna1
+16-11-2017 10:39:05 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap5iad1
+16-11-2017 10:39:06 MST push_models_to_pods INFO - model_1510853038937 loaded on ad8.ap5iad1
+16-11-2017 10:39:06 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap5sna1
+16-11-2017 10:39:09 MST push_models_to_pods INFO - model_1510853038937 loaded on ad8.ap5sna1
+16-11-2017 10:39:09 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap6iad1
+16-11-2017 10:39:10 MST push_models_to_pods INFO - model_1510853038937 loaded on ad8.ap6iad1
+16-11-2017 10:39:10 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap6sna1
+16-11-2017 10:39:13 MST push_models_to_pods INFO - model_1510853038937 loaded on ad8.ap6sna1
+16-11-2017 10:39:13 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap1iad3
+16-11-2017 10:39:17 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap1iad3
+16-11-2017 10:39:17 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap1sna1
+16-11-2017 10:39:19 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap1sna1
+16-11-2017 10:39:19 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap2sfo1
+16-11-2017 10:39:19 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:39:19 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:39:19 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:39:19 MST push_models_to_pods INFO - Load Model Endpoint failed for ad9.ap2sfo1
+16-11-2017 10:39:19 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap2sna1
+16-11-2017 10:39:22 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap2sna1
+16-11-2017 10:39:22 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap3sfo1
+16-11-2017 10:39:22 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:39:22 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:39:22 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:39:22 MST push_models_to_pods INFO - Load Model Endpoint failed for ad9.ap3sfo1
+16-11-2017 10:39:22 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap3sna1
+16-11-2017 10:39:26 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap3sna1
+16-11-2017 10:39:26 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap4sfo1
+16-11-2017 10:39:26 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:39:26 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:39:27 MST push_models_to_pods INFO - Host key verification failed.
+16-11-2017 10:39:27 MST push_models_to_pods INFO - Load Model Endpoint failed for ad9.ap4sfo1
+16-11-2017 10:39:27 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap4sna1
+16-11-2017 10:39:29 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap4sna1
+16-11-2017 10:39:29 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap5sna1
+16-11-2017 10:39:31 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap5sna1
+16-11-2017 10:39:31 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap6sna1
+16-11-2017 10:39:34 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap6sna1
+16-11-2017 10:39:34 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap2ams2
+16-11-2017 10:39:38 MST push_models_to_pods INFO - model_1510853038937 loaded on ad1.ap2ams2
+16-11-2017 10:39:38 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap2ams2
+16-11-2017 10:39:42 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap2ams2
+16-11-2017 10:39:42 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap2ams2
+16-11-2017 10:39:46 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap2ams2
+16-11-2017 10:39:46 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap2ams2
+16-11-2017 10:39:50 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap2ams2
+16-11-2017 10:39:50 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap2ams2
+16-11-2017 10:39:54 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap2ams2
+16-11-2017 10:39:54 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap2ams2
+16-11-2017 10:39:58 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap2ams2
+16-11-2017 10:39:58 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap2ams2
+16-11-2017 10:40:02 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap2ams2
+16-11-2017 10:40:02 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap2ams2
+16-11-2017 10:40:06 MST push_models_to_pods INFO - model_1510853038937 loaded on ad8.ap2ams2
+16-11-2017 10:40:06 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap2ams2
+16-11-2017 10:40:10 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap2ams2
+16-11-2017 10:40:10 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap2ams2
+16-11-2017 10:40:13 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap2ams2
+16-11-2017 10:40:13 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap1sjc1
+16-11-2017 10:40:15 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap1sjc1
+16-11-2017 10:40:15 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap1sjc1
+16-11-2017 10:40:16 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap1sjc1
+16-11-2017 10:40:16 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap2sjc1
+16-11-2017 10:40:18 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap2sjc1
+16-11-2017 10:40:18 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap2sjc1
+16-11-2017 10:40:19 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap2sjc1
+16-11-2017 10:40:19 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap1iad1
+16-11-2017 10:40:19 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:40:19 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:40:20 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:40:20 MST push_models_to_pods INFO - Load Model Endpoint failed for ad9.ap1iad1
+16-11-2017 10:40:20 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap1iad1
+16-11-2017 10:40:20 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:40:20 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:40:20 MST push_models_to_pods INFO - Permission denied (publickey,password,keyboard-interactive).
+16-11-2017 10:40:21 MST push_models_to_pods INFO - Load Model Endpoint failed for ad10.ap1iad1
+16-11-2017 10:40:21 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap2iad1
+16-11-2017 10:40:22 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap2iad1
+16-11-2017 10:40:22 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap2iad1
+16-11-2017 10:40:23 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap2iad1
+16-11-2017 10:40:23 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap3iad1
+16-11-2017 10:40:24 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap3iad1
+16-11-2017 10:40:24 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap3iad1
+16-11-2017 10:40:26 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap3iad1
+16-11-2017 10:40:26 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap4iad1
+16-11-2017 10:40:27 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap4iad1
+16-11-2017 10:40:27 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap4iad1
+16-11-2017 10:40:28 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap4iad1
+16-11-2017 10:40:28 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap5iad1
+16-11-2017 10:40:29 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap5iad1
+16-11-2017 10:40:29 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap5iad1
+16-11-2017 10:40:31 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap5iad1
+16-11-2017 10:40:31 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap6iad1
+16-11-2017 10:40:32 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap6iad1
+16-11-2017 10:40:32 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap6iad1
+16-11-2017 10:40:33 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap6iad1
+16-11-2017 10:40:33 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap1ams2
+16-11-2017 10:40:37 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap1ams2
+16-11-2017 10:40:37 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap1ams2
+16-11-2017 10:40:41 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap1ams2
+16-11-2017 10:40:41 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap1ewr1
+16-11-2017 10:40:43 MST push_models_to_pods INFO - model_1510853038937 loaded on ad1.ap1ewr1
+16-11-2017 10:40:43 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap1ewr1
+16-11-2017 10:40:45 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap1ewr1
+16-11-2017 10:40:45 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap1ewr1
+16-11-2017 10:40:48 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap1ewr1
+16-11-2017 10:40:48 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap1ewr1
+16-11-2017 10:40:50 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap1ewr1
+16-11-2017 10:40:50 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap1ewr1
+16-11-2017 10:40:52 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap1ewr1
+16-11-2017 10:40:52 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap1ewr1
+16-11-2017 10:40:53 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap1ewr1
+16-11-2017 10:40:53 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap1ewr1
+16-11-2017 10:40:55 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap1ewr1
+16-11-2017 10:40:55 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap1ewr1
+16-11-2017 10:40:55 MST push_models_to_pods INFO - Permission denied (publickey,password).
+16-11-2017 10:40:55 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:40:56 MST push_models_to_pods INFO - Permission denied (publickey,password).
+16-11-2017 10:40:56 MST push_models_to_pods INFO - Load Model Endpoint failed for ad8.ap1ewr1
+16-11-2017 10:40:56 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap1ewr1
+16-11-2017 10:40:58 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap1ewr1
+16-11-2017 10:40:58 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap1ewr1
+16-11-2017 10:41:00 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap1ewr1
+16-11-2017 10:41:00 MST push_models_to_pods INFO - Transfering and loading model on ad11.ap1ewr1
+16-11-2017 10:41:01 MST push_models_to_pods INFO - model_1510853038937 loaded on ad11.ap1ewr1
+16-11-2017 10:41:01 MST push_models_to_pods INFO - Transfering and loading model on ad12.ap1ewr1
+16-11-2017 10:41:03 MST push_models_to_pods INFO - model_1510853038937 loaded on ad12.ap1ewr1
+16-11-2017 10:41:03 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap2ewr1
+16-11-2017 10:41:05 MST push_models_to_pods INFO - model_1510853038937 loaded on ad1.ap2ewr1
+16-11-2017 10:41:05 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap2ewr1
+16-11-2017 10:41:07 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap2ewr1
+16-11-2017 10:41:07 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap2ewr1
+16-11-2017 10:41:08 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap2ewr1
+16-11-2017 10:41:08 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap2ewr1
+16-11-2017 10:41:12 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap2ewr1
+16-11-2017 10:41:12 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap2ewr1
+16-11-2017 10:41:13 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap2ewr1
+16-11-2017 10:41:13 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap2ewr1
+16-11-2017 10:41:15 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap2ewr1
+16-11-2017 10:41:15 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap2ewr1
+16-11-2017 10:41:17 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap2ewr1
+16-11-2017 10:41:17 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap2ewr1
+16-11-2017 10:41:17 MST push_models_to_pods INFO - Permission denied (publickey,password).
+16-11-2017 10:41:17 MST push_models_to_pods INFO - lost connection
+16-11-2017 10:41:18 MST push_models_to_pods INFO - Permission denied (publickey,password).
+16-11-2017 10:41:18 MST push_models_to_pods INFO - Load Model Endpoint failed for ad8.ap2ewr1
+16-11-2017 10:41:18 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap2ewr1
+16-11-2017 10:41:19 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap2ewr1
+16-11-2017 10:41:19 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap2ewr1
+16-11-2017 10:41:21 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap2ewr1
+16-11-2017 10:41:21 MST push_models_to_pods INFO - Transfering and loading model on ad11.ap2ewr1
+16-11-2017 10:41:24 MST push_models_to_pods INFO - model_1510853038937 loaded on ad11.ap2ewr1
+16-11-2017 10:41:24 MST push_models_to_pods INFO - Transfering and loading model on ad12.ap2ewr1
+16-11-2017 10:41:26 MST push_models_to_pods INFO - model_1510853038937 loaded on ad12.ap2ewr1
+16-11-2017 10:41:26 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap3ewr1
+16-11-2017 10:41:28 MST push_models_to_pods INFO - model_1510853038937 loaded on ad1.ap3ewr1
+16-11-2017 10:41:28 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap3ewr1
+16-11-2017 10:41:30 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap3ewr1
+16-11-2017 10:41:30 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap3ewr1
+16-11-2017 10:41:32 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap3ewr1
+16-11-2017 10:41:32 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap3ewr1
+16-11-2017 10:41:34 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap3ewr1
+16-11-2017 10:41:34 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap3ewr1
+16-11-2017 10:41:36 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap3ewr1
+16-11-2017 10:41:36 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap3ewr1
+16-11-2017 10:41:37 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap3ewr1
+16-11-2017 10:41:37 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap3ewr1
+16-11-2017 10:41:39 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap3ewr1
+16-11-2017 10:41:39 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap3ewr1
+16-11-2017 10:41:42 MST push_models_to_pods INFO - model_1510853038937 loaded on ad8.ap3ewr1
+16-11-2017 10:41:42 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap3ewr1
+16-11-2017 10:41:46 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap3ewr1
+16-11-2017 10:41:46 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap3ewr1
+16-11-2017 10:41:48 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap3ewr1
+16-11-2017 10:41:48 MST push_models_to_pods INFO - Transfering and loading model on ad11.ap3ewr1
+16-11-2017 10:41:49 MST push_models_to_pods INFO - model_1510853038937 loaded on ad11.ap3ewr1
+16-11-2017 10:41:49 MST push_models_to_pods INFO - Transfering and loading model on ad12.ap3ewr1
+16-11-2017 10:41:53 MST push_models_to_pods INFO - model_1510853038937 loaded on ad12.ap3ewr1
+16-11-2017 10:41:53 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap4ewr1
+16-11-2017 10:41:54 MST push_models_to_pods INFO - model_1510853038937 loaded on ad1.ap4ewr1
+16-11-2017 10:41:54 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap4ewr1
+16-11-2017 10:41:56 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap4ewr1
+16-11-2017 10:41:56 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap4ewr1
+16-11-2017 10:41:58 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap4ewr1
+16-11-2017 10:41:58 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap4ewr1
+16-11-2017 10:42:00 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap4ewr1
+16-11-2017 10:42:00 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap4ewr1
+16-11-2017 10:42:01 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap4ewr1
+16-11-2017 10:42:01 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap4ewr1
+16-11-2017 10:42:03 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap4ewr1
+16-11-2017 10:42:03 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap4ewr1
+16-11-2017 10:42:05 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap4ewr1
+16-11-2017 10:42:05 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap4ewr1
+16-11-2017 10:42:08 MST push_models_to_pods INFO - model_1510853038937 loaded on ad8.ap4ewr1
+16-11-2017 10:42:08 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap4ewr1
+16-11-2017 10:42:10 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap4ewr1
+16-11-2017 10:42:10 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap4ewr1
+16-11-2017 10:42:11 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap4ewr1
+16-11-2017 10:42:11 MST push_models_to_pods INFO - Transfering and loading model on ad11.ap4ewr1
+16-11-2017 10:42:15 MST push_models_to_pods INFO - model_1510853038937 loaded on ad11.ap4ewr1
+16-11-2017 10:42:15 MST push_models_to_pods INFO - Transfering and loading model on ad12.ap4ewr1
+16-11-2017 10:42:17 MST push_models_to_pods INFO - model_1510853038937 loaded on ad12.ap4ewr1
+16-11-2017 10:42:17 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap5ewr1
+16-11-2017 10:42:18 MST push_models_to_pods INFO - model_1510853038937 loaded on ad1.ap5ewr1
+16-11-2017 10:42:18 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap5ewr1
+16-11-2017 10:42:20 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap5ewr1
+16-11-2017 10:42:20 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap5ewr1
+16-11-2017 10:42:22 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap5ewr1
+16-11-2017 10:42:22 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap5ewr1
+16-11-2017 10:42:24 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap5ewr1
+16-11-2017 10:42:24 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap5ewr1
+16-11-2017 10:42:25 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap5ewr1
+16-11-2017 10:42:25 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap5ewr1
+16-11-2017 10:42:27 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap5ewr1
+16-11-2017 10:42:27 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap5ewr1
+16-11-2017 10:42:29 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap5ewr1
+16-11-2017 10:42:29 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap5ewr1
+16-11-2017 10:42:30 MST push_models_to_pods INFO - model_1510853038937 loaded on ad8.ap5ewr1
+16-11-2017 10:42:30 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap5ewr1
+16-11-2017 10:42:32 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap5ewr1
+16-11-2017 10:42:32 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap5ewr1
+16-11-2017 10:42:34 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap5ewr1
+16-11-2017 10:42:34 MST push_models_to_pods INFO - Transfering and loading model on ad11.ap5ewr1
+16-11-2017 10:42:36 MST push_models_to_pods INFO - model_1510853038937 loaded on ad11.ap5ewr1
+16-11-2017 10:42:36 MST push_models_to_pods INFO - Transfering and loading model on ad12.ap5ewr1
+16-11-2017 10:42:38 MST push_models_to_pods INFO - model_1510853038937 loaded on ad12.ap5ewr1
+16-11-2017 10:42:38 MST push_models_to_pods INFO - Transfering and loading model on ad1.ap6ewr1
+16-11-2017 10:42:41 MST push_models_to_pods INFO - model_1510853038937 loaded on ad1.ap6ewr1
+16-11-2017 10:42:41 MST push_models_to_pods INFO - Transfering and loading model on ad2.ap6ewr1
+16-11-2017 10:42:43 MST push_models_to_pods INFO - model_1510853038937 loaded on ad2.ap6ewr1
+16-11-2017 10:42:43 MST push_models_to_pods INFO - Transfering and loading model on ad3.ap6ewr1
+16-11-2017 10:42:46 MST push_models_to_pods INFO - model_1510853038937 loaded on ad3.ap6ewr1
+16-11-2017 10:42:46 MST push_models_to_pods INFO - Transfering and loading model on ad4.ap6ewr1
+16-11-2017 10:42:49 MST push_models_to_pods INFO - model_1510853038937 loaded on ad4.ap6ewr1
+16-11-2017 10:42:49 MST push_models_to_pods INFO - Transfering and loading model on ad5.ap6ewr1
+16-11-2017 10:42:50 MST push_models_to_pods INFO - model_1510853038937 loaded on ad5.ap6ewr1
+16-11-2017 10:42:50 MST push_models_to_pods INFO - Transfering and loading model on ad6.ap6ewr1
+16-11-2017 10:42:52 MST push_models_to_pods INFO - model_1510853038937 loaded on ad6.ap6ewr1
+16-11-2017 10:42:52 MST push_models_to_pods INFO - Transfering and loading model on ad7.ap6ewr1
+16-11-2017 10:42:54 MST push_models_to_pods INFO - model_1510853038937 loaded on ad7.ap6ewr1
+16-11-2017 10:42:54 MST push_models_to_pods INFO - Transfering and loading model on ad8.ap6ewr1
+16-11-2017 10:42:56 MST push_models_to_pods INFO - model_1510853038937 loaded on ad8.ap6ewr1
+16-11-2017 10:42:56 MST push_models_to_pods INFO - Transfering and loading model on ad9.ap6ewr1
+16-11-2017 10:42:58 MST push_models_to_pods INFO - model_1510853038937 loaded on ad9.ap6ewr1
+16-11-2017 10:42:58 MST push_models_to_pods INFO - Transfering and loading model on ad10.ap6ewr1
+16-11-2017 10:43:00 MST push_models_to_pods INFO - model_1510853038937 loaded on ad10.ap6ewr1
+16-11-2017 10:43:00 MST push_models_to_pods INFO - Transfering and loading model on ad11.ap6ewr1
+16-11-2017 10:43:01 MST push_models_to_pods INFO - model_1510853038937 loaded on ad11.ap6ewr1
+16-11-2017 10:43:01 MST push_models_to_pods INFO - Transfering and loading model on ad12.ap6ewr1
+16-11-2017 10:43:03 MST push_models_to_pods INFO - model_1510853038937 loaded on ad12.ap6ewr1
+16-11-2017 10:43:03 MST push_models_to_pods INFO - #2 >> runtime: 0:08:48.621569
+16-11-2017 10:43:03 MST push_models_to_pods INFO - Workflow completed at 2017-11-16 10:34:12.926113
+16-11-2017 10:43:03 MST push_models_to_pods INFO - >> runtime: 0:08:50.626460
+16-11-2017 10:43:13 MST push_models_to_pods INFO - Process completed successfully in 540 seconds.
+16-11-2017 10:43:13 MST push_models_to_pods INFO - Finishing job push_models_to_pods attempt: 0 at 1510854193270 with status SUCCEEDED

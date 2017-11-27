@@ -1,0 +1,6 @@
+[[output]]
+
+* model is not going to sfo boxes, they still need keys put on them
+* model is still not going to boxes from ticket, working with stacey to identify issue
+
+

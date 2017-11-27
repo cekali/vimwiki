@@ -1,0 +1,16 @@
+* [X] Talk to jeff and laura to determine when we can start docker
+* [X] Add ticket to degrade unified reporting service
+* [X] Add 3rd party api spike to backlog
+* [X] Danielle to figure out if we can get rid of image upload
+
+Retro next week? Happy Hour retro?
+
+
+Ryan Brendle in Data Science
+Talk to Will about "Idea"
+
+
+Expose Nectar API 
+
+
+

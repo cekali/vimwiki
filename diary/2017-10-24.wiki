@@ -1,0 +1,8 @@
+Successful release 
+Production outage (inc-41)
+
+
+downtime tomorrow
+release on thursday
+removing file system deps in preparation for docker
+Caas is getting closer to ready.

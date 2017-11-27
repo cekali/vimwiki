@@ -1,0 +1,25 @@
+= Typescript =
+== pro ==
+- if it compiles, it will run
+- More "modern" feel -- More java server side functionality
+- Easier to ramp up than we thought
+- Tooling is really good
+- A little better at self documenting
+- Works well for Library style code
+
+== con ==
+- adds overhead, small changes have cascading work
+- no runtime protection
+    - problem is exacerbated by not being fully typescript
+- not worth converting everything
+- only having some as typescript creates a barrier to entry
+    - Learning curve
+    - This project is in typescript, and no one wants to touch it
+    - Setup is required
+- Transition was more involved than anticipated
+
+== questions ==
+- Is there any reason an individual can't use it?
+
+= Random questions =
+- Who uses category?

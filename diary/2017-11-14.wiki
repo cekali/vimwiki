@@ -1,0 +1,3 @@
+hdfs -> hadoop file system
+dfs -> distributed file system
+

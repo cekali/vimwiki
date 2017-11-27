@@ -1,0 +1,19 @@
+= FO-380 =
+* the logic between the toggles and the json is confusing
+* want to turn on either through toggle or json?
+* if json is present, use it, otherwise, use the default (which is the toggle)
+* I STOPPED TAKING NOTES IN FAVOR OR READING THE PR
+
+= Standup =
+* .
+
+= On-Call =
+* focus on actionable items to make on-call suck less
+* 
+
+= TODO = 
+* kafka summary
+* our kafka setup
+* aerospike summary
+* our aerospike setup
+* What happened this morning?
