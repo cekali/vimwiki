@@ -1,0 +1,7 @@
+Yesterday:
+    - turned training back on, had several failures, some with scp, one with training
+    - continued to diagnose errors
+Today:
+    - Work with brad (or others?) to resolve scp problem
+    - Work wtih Dan and/or Josh to move forward on diagnosing errors
+    - 
