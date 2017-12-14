@@ -1,0 +1,13 @@
+lsb_release -a
+
+/usr/lib/x86_64-linux-gnu/libcurl.so.3
+
+/opt/mesosphere/libmesos-bundle/lib/
+
+cp /usr/lib/x86_64-linux-gnu/libcurl.so.3 /opt/mesosphere/libmesos-bundle/lib/
+
+ mv /opt/mesosphere/libmesos-bundle/lib/libcurl.so.4 /opt/mesosphere/libmesos-bundle/lib/backup.4
+ 
+ chmod u+x /opt/mesosphere/libmesos-bundle/lib/libcurl.so.3
+ 
+ 

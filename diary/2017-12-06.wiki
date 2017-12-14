@@ -1,0 +1,39 @@
+docker build -t ckalick/sparktest .
+
+
+docker tag ckalick/sparktest:5 nexus.prod.lijit.com/sparktest:0
+
+docker push nexus.prod.lijit.com/sparktest:latest
+
+dcos spark run --submit-args="--class org.apache.spark.examples.SparkPi https://downloads.mesosphere.com/spark/assets/spark-examples_2.11-2.0.1.jar 30"
+
+dcos spark run --docker-image=nexus.prod.lijit.com/sparktest:latest --submit-args="mwork3.dfw3.lijit.com:/home/ckalick/hello_2.12-0.1.0-SNAPSHOT.jar"
+
+dcos spark run --docker-image=nexus.prod.lijit.com/sparktest:latest --submit-args="--class org.apache.spark.examples.SparkPi https://downloads.mesosphere.com/spark/assets/spark-examples_2.11-2.0.1.jar 30"
+
+dcos spark run --docker-image=nexus.prod.lijit.com/sparktest:latest --submit-args="--class SparkPi https://doc-0c-2o-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/0fo2jh8oe7kfhn2548q9qcte0suohg07/1512590400000/00885947958706338589/*/14MJMp9zk1EDl_A3jUZKFSuijqBla4ed1?e=download 30"
+
+
+
+1. All the country features as before, one-hot encoded (`AD` through `ZZ`)
+2. [ ] Browser, one-hot encoded (new)
+    `browser_bot`, bot
+    `browser_cr`, Chrome
+    `browser_fb`, Facebook app
+    `browser_fx`, Firefox
+    `browser_ie`, Internet Explorer
+    `browser_pn`, Pinterest app
+    `browser_sf`, Safari
+    `browser_tw`, Twitter app
+    `browser_unk`, Unknown
+3. `deal_flag`, 1 for a deal, 0 otherwise
+4. `domain_only`, `domain_size`, `dynamic_floor`, `reader_only`, `reader_size` advisements
+5. Hour of the day (one-hot encoded), `hour_00` through `hour_23`
+6. `matched_cookie_flag`, 1 for any matched cookie, 0 otherwise
+7. [ ] (new) `num_unique_cookie_matches`, number of unique matched cookies (for all bidders and seats)
+8. `os_android`, `os_cros`, `os_linux`, `os_nt10`, `os_nt6`, `os_osx`, `os_other`, `os_sun`
+9. [ ] (new) `is_mobile`, 1 for "Mobile" (Smartphone or Tablet), 0 for Desktop 
+10. [ ] (new) `zone_hourly_min`, the minimum of the `zone_hourly` advisements if they exist, 0 otherwise.
+11. [ ] (new) Time features: `sin_24h`, `cos_24h`, `sin_12h`, `cos_12h`, `sin_8h`, `cos_8h`, calculated as sin((2*Pi/T) * t), where T = 24*60 minutes, 12*60 minutes, or 8*60 minutes and t = the number of minutes since midnight (00:00) 
+12. [ ] (new) `num_deals`, number of deal ids applied to the auction
+13. [ ] (new) `bidder_id_ohe`, one-hot encoding of whether a bidder matched a cookie. Featured `bidder_ids` and bidders would be: `Map(5 -> Dstillery, 10 -> RocketFuel, 56 -> RhythmOne, 42 -> Taboola, 1 -> Amobee, 6 -> MyBuys, 60 -> FeatureForward_Vid, 70 -> PowerLinks, 21 -> Criteo-EU, 9 -> Criteo, 41 -> FeatureForward, 73 -> EnvisionX, 2 -> Simpli.fi, 45 -> Vizury, 22 -> Criteo-APAC, 27 -> TradeDesk, 71 -> Pubmatic_UK, 49 -> PulsePoint, 76 -> OpenX_RTB, 66 -> AcuityAds, 3 -> MediaMath, 16 -> Centro, 43 -> Quantcast, 26 -> BidSwitch, 23 -> DBM, 75 -> ClearPier, 58 -> Pubmatic, 36 -> GumGum, 30 -> Sociomantic, 15 -> Netmining)`, and another entry for none of the above.

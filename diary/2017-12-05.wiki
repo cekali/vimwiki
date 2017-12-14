@@ -1,0 +1,3 @@
+vagrant dcos url: http://m1.dcos/
+
+change dcos url: dcos config set core.dcos_url <url>

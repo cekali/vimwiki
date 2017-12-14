@@ -1,0 +1,23 @@
+- There have been multiple failures of the scp script
+    - re-write the bit that is failing to fully write to files
+- 1/2 way through features for 2.2
+    - I'd estimate 4-6 hours of work remaining
+- Working with Dan to connect DC/OS to hadoop/kafka/etc
+
+
+
+Deployment location:
+- mwork4.dfw3.lijit.com:/usr/share/sovrn-yomta/yield-optimization-model-trainer-assembly-0.1.jar
+
+
+
+
+Linking to google drive file
+- 'https://drive.google.com/uc?export=download&id=<replaceWithYourFileId>'
+- https://drive.google.com/file/d/1iEk3H7-chjeTatdsSXX9XF-L5T72e25i/view?usp=sharing
+- 1iEk3H7-chjeTatdsSXX9XF-L5T72e25i
+- 'https://drive.google.com/uc?export=download&id=1iEk3H7-chjeTatdsSXX9XF-L5T72e25i'
+
+https://drive.google.com/open?id=16Tp5IxEz6VoR-xzsBeuInhQn206cxnMc
+16Tp5IxEz6VoR-xzsBeuInhQn206cxnMc
+- 'https://drive.google.com/uc?export=download&id=16Tp5IxEz6VoR-xzsBeuInhQn206cxnMc'

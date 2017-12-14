@@ -7,4 +7,4 @@ Today
       up my local environment.
     - I'm also going to turn on continuous training and monitor it throughout the day
 
-
+bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic raw_ad_activity --from-beginning

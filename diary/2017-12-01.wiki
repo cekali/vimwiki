@@ -1,0 +1,18 @@
+Yesterday:
+    - Prepared a local envirornment, experimented with some modificcations
+    - monitored continuous training, seems to be working well
+Today:
+    - Documenting local environment setup
+    - Experimenting with local cluster to prove/disprove some of our theories
+        - Partition size as it relates to repartitioning
+        - number of xgboost workers
+        
+Mesos/Spark:
+    - I'm not yet seeing how to scale the number of worker nodes
+    - instructions for zeppelin: https://dcos.io/docs/1.7/usage/tutorials/spark/#using-spark-interactively 
+      
+Spark Image details:
+    - Distributor ID:	Ubuntu
+    - Description:	Ubuntu 14.04.5 LTS
+    - Release:	14.04
+    - Codename:	trusty
