@@ -1,0 +1,58 @@
+dcos spark run --docker-image=nexus.prod.lijit.com/sparktest:latest --submit-args="--class com.sovrn.modeltrainer.Main https://www.dropbox.com/s/w7bfto4y542tf39/yield-optimization-model-trainer-assembly-0.1.jar?dl=1 dcos 1"
+
+ENV http_proxy=squid.dfw2.lijit.com:3128
+ENV https_proxy=squid.dfw2.lijit.com:3128
+
+= dcos training =
+
+= my random questions =
+- what is the distinction between dc/os and mesosphere?
+- where does marathon fit in?
+- F5? to load balance across datacenters?
+- ntp must be running. What is ntp?
+
+= intro =
+- microservices
+- 12Factor
+- containers
+- "Digital Transformation requires data-intensive applications operating at scale"
+- modern enterprise stack requires
+    - Cload native tech; Distributed computing expertise; DevOps process and culture;
+- customer impact
+    - Accelerate time to market; ensure resilience and automation; save money in datacenter or cloud
+- Hyperscale operations
+    - mesosphere dcos allows us to abstract away from the individual machines
+    - Everything runs on same shared cluster. Allows higher level of utilization
+- Smack stack: 
+  
+= Kick Start =
+- Recommends the use of Advanced Install
+    - most people automate the advanced install
+    - Should do it by hand at least once
+- installs made with cli or gui can never be upgraded, would require a full reinstall
+- Could provider templates
+    - Not only creates the dcos cluster, sets up the underlying cloud infrastructure. then executes 
+      the cli/gui install process
+- bootstrap node coordiates startup
+- master nodes, more than one on any cluster you care about, come in odd numbers
+    - the brain of the cluster
+- Agent nodes run the workloads
+- install steps are taken on the bootstrap node,
+    - spin up webserver on bootstrap
+    - distribute info to all other nodes
+    - There will be files on the bootstrap that will be needed to upgrade
+    - however, the bootstrap does not need to remain running
+- Two types of agens
+    - public and private
+    - public agents are connected to internal and external networks
+    - private agents are only connected to internal networks
+= Master nodes =
+- reccomend 3 masters for dev, and 5 masters for prod
+- Cannot horizontally scale master nodes
+- masters love ssds
+- ntp must be running, ntp must be in sync
+
+Container Storage Interface
+
+
+= Apache Mesos =
