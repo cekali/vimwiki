@@ -3,6 +3,8 @@ dcos spark run --docker-image=nexus.prod.lijit.com/sparktest:latest --submit-arg
 ENV http_proxy=squid.dfw2.lijit.com:3128
 ENV https_proxy=squid.dfw2.lijit.com:3128
 
+16
+
 = dcos training =
 
 = my random questions =
