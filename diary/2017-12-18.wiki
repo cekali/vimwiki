@@ -1,0 +1,10 @@
+Last Week
+- Training wasn't super helpful
+- Two features left to model for 2.2
+- DC/OS unable to connect to Kafka servers
+- Model training is crashing
+
+Today 
+- 1 on 1 with Eric
+- I could use some help prioritizing
+    - result: debug model training issues (fo-456)
