@@ -1,0 +1,1 @@
+scp ./* ckalick@mwork4.dfw3.lijit.com:/usr/share/sovrn-yomta/azkaban/continuous-model-training/
